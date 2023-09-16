@@ -1,0 +1,946 @@
+
+
+          
+/* _________________ END OF MAXpx ________________ */
+          @media screen and (min-width: 769px){
+          
+                .gridContent {
+                    display: grid;
+                    top: 180px;
+                    margin: 0px auto 0;
+                    min-width: 100%;
+                    height: 100dvh;
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    justify-content: center center;
+                    grid-template-columns: 1fr 720px 1fr;
+                    grid-template-rows: 60px 260dvh auto;
+                    grid-template-areas:
+                      ". title ."
+                      "ls content rs"
+                      "ls footer rs";
+                      }
+
+                  .home{
+                    display: none;
+                  }
+
+           .home_icon{
+              position: relative;
+              margin: 0;
+              padding: 0;
+              top: -34px;
+              left: 30%;
+              z-index: 9;
+            }
+
+              #bunches{
+                display: block;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 91%;
+                left: 35%;
+                transition: all 3s ease;
+                animation: bunches 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #bunches.active{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 92%;
+                left: 35%;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+              #roses{
+                display: block;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom:96%;
+                left: 40%;
+                transition: all 3s ease;
+                animation: send_rose 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #roses.active{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 97%;
+                left: 40%;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+
+                    #HolyRosary{
+                      position: absolute;
+                      top: -5px;
+                      left: -730px;
+                      margin: 0;
+                      height: 780px;
+                      z-index: 9;
+                      transform: scale(1.5);
+                    }
+                 
+             
+                     .logo854{
+                      cursor: pointer;
+                      top: -2px;
+                      left: 24%;
+                      right: 80%;
+                      display: block;
+                      position: absolute;
+                    }
+                    
+                .VI{
+                  display: none;
+                }
+
+                   /* Sun Moon Icon */
+                    .sun {
+                      display: block;
+                      position: absolute;
+                      top: 14px;
+                      left: 63%;
+                      right: 40%;
+                      margin: 0;
+                      padding: 0;
+                      cursor: pointer;
+                      z-index: 9;
+                    }
+
+                     #divineIcon{
+                      position: relative;
+                      width: 25px;
+                      top: -12px;
+                      left: 68%;
+                      cursor: pointer;
+                      z-index: 7;
+                    }
+
+                    .fb{
+                      position: absolute;
+                      top: -6px;
+                      left: 64%;
+                      cursor: pointer;
+                      z-index: 7;
+                      width:25px;
+                    }
+                    
+                      nav {
+                      display: flex;
+                      width: 100%;
+                      height: fit-content;
+                      margin: 0px auto;
+                      top: -30px;
+                      left: 7%;
+                      position: relative;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      z-index: 1;
+                    }
+              
+                    .menu-ul {
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      height: fit-content;
+                      list-style: none;
+                      justify-content: right;
+                      right: 37%;
+                    }
+
+                   
+                    .menu-ul li a {
+                      padding-left: 3rem;
+                      letter-spacing: 1px;
+                      right: 2rem;
+                      font-size: 17px;
+                      }
+
+              
+
+/* Actual Red Rose Sub-heading */
+.start,
+.creed,
+.ourFatherTitle,
+.hailM,
+.glory,
+.hailHolyQueen,
+.conclude,
+.heart,
+.comment,
+.clickLink {
+  color: var(--rose);
+  font-weight: 700;
+  width: 600px;
+}
+
+.start,
+.makeSign,
+.hailMary,
+.ourFather,
+.theCreed,
+.signCross,
+.gloryBe,
+.hailHolyQueen,
+.oMyJesus,
+.closing,
+.conclude,
+.bottom,
+.heart,
+a {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  width: 600px;
+  left: 50px;
+}
+
+
+            #Mysteries_Container{
+            grid-area: content;
+            position: relative;
+            left: 0px;
+            width: 600px;
+            top: 185px; 
+            z-index: 1;
+            height: 299vh;
+           }
+
+            #Joyful__Mysteries,
+            #Mysteries__of__Light,
+            #Sorrowful__Mysteries,
+            #The__Glorious__Mysteries{
+              position: absolute;
+              margin-top: 3vh;
+              bottom: 100px;
+              width: 720px;
+              height: 295vh;
+              text-align: center;
+              z-index: 0;
+            }
+        
+            .J1,.L1,.S1,.G1,
+            .J2,.L2,.S2,.G2,
+            .J3,.L3,.S3,.G3,
+            .J4,.L4,.S4,.G4,
+            .J5,.L5,.S5,.G5{
+              position: absolute;
+              margin-left: -225px;
+              color: var(--darkModeText);
+              opacity: 0;
+              display: none;
+              padding: 20px;
+              border: none;
+              border-radius: 25px;
+              min-width: 320px;
+              width: 720px;
+              height: 295vh;
+              background-color: none;
+            }
+
+            .J1.active,.L1.active,.S1.active,.G1.active,
+            .J2.active,.L2.active,.S2.active,.G2.active,
+            .J3.active,.L3.active,.S3.active,.G3.active,
+            .J4.active,.L4.active,.S4.active,.G4.active,
+            .J5.active,.L5.active,.S5.active,.G5.active{
+              display: block;
+              color: var(--darkModeText);
+              opacity: 1;
+              padding: 20px;
+              position: absolute;
+              min-width: 320px;
+              width: 720px;
+              height: 295vh;
+              border: none;
+              border-radius: 25px;
+              left: 22.5em;
+              background-color: none;
+              }
+
+
+         /* Mystery Background Colour Active */
+                .bg{
+                  top: 20px;
+                  opacity: 1;
+                  position: absolute;
+                  min-width: 320px;
+                  width: 718px;
+                  height: 302vh;
+                  border: none;
+                  border-radius: 25px;
+                  left: -359px;
+                 background-image: linear-gradient(
+                    to top left,
+                    var(--darkblue),
+                    var(--darkerBlue)
+                  );
+                  z-index: -2;
+                }
+                .bg.dark{
+                  top: 20px;
+                  opacity: 1;
+                  position: absolute;
+                  min-width: 320px;
+                  width: 718px;
+                  height: 302vh;
+                  border: none;
+                  border-radius: 25px;
+                  left: -359px;
+                  background-color: var(--darkerBlue);
+                  z-index: -2;
+                }
+                  
+          .Mary_Heading600,
+          .Mary_Heading340,
+          .Mary_Heading360{
+            display: none;
+          }
+
+          .Mary_Heading720{
+          display: block;
+          grid-area: title;
+          position: absolute;
+          left: 0;
+          justify-self: center;
+          top: 0px;
+          z-index: -1;
+        }
+
+                    .textLight, .textDark {
+                      grid-area: content;
+                      top: 63px;
+                      margin: 46px auto;
+                      width: 720px;
+                      justify-self: center;
+                      height: 320dvh;
+                      z-index: 0;
+                    }
+
+                       
+                    p.signCross{
+                      top: -20px;
+                      left: 250px;
+                    }
+                    
+                    .start{
+                            left: 150px;
+                            top: 50px;
+                      }
+                    .textLight p{
+                      width: 500px;
+                      margin-left: 50px;
+                    }
+                
+            
+                    .title {
+                      position: absolute;
+                      align-items: center;
+                      justify-self: center;
+                      left: 24%;                      
+                      top: -87px;
+                      font-size: 5rem;
+                      z-index: 1 !important;
+                    }
+
+                   .titleDark{
+                    z-index: 1 !important;
+                   }
+
+                    .Hail p{
+                      left: 55px;
+                      top: 30px;
+                      position: relative;
+                    }
+                    .Hail .hailHolyQueen{
+                      position: relative;
+                      top: 10px;
+                      left: 120px;
+                    }
+                    
+
+                    .OMyJesus{
+                      top: 20px;
+                      position: relative;
+                      left: 50px;
+                    }
+                  .conclude{
+                    top: 0px;
+                  }
+
+              .closing p{
+                top: -25px;
+              }
+                    
+              .makeSign p{
+              position: relative;
+              left: 0px;
+              text-align: center;
+            }
+
+               .heart{
+              position: relative;
+              top: 50px;
+            }
+
+
+          #Mysteries_Container{
+            grid-area: content;
+            position: relative;
+            left: 225px;
+            width: 720px;
+            top: 185px; 
+            z-index: 0;
+           }
+
+            #Joyful__Mysteries,
+            #Mysteries__of__Light,
+            #Sorrowful__Mysteries,
+            #The__Glorious__Mysteries{
+              position: absolute;
+              top: 7dvh;
+              bottom: 100px;
+              min-width: 320px;
+              width: 720px;
+              text-align: center;
+              z-index: 5;
+            }
+                          
+              #counters-and-buttons-container{
+              position: relative;
+              margin: 0;
+              padding: 0;
+              top: 550px;
+              left: 650px;
+              z-index: 2;
+              display: block;
+            }
+
+            #counters-container,
+            #buttons-container {
+            position: absolute;
+            transition: all 2s;
+             }
+
+              /*........ The BIG 0 number .......*/
+            #beads {
+              position: absolute;
+              top: -85px;
+              left: 40px;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: #f677f6;
+              order: 3;
+              transform: translate(-50%, -105%);
+              background-color: black;
+              width: fit-content;
+              border: none;
+              border-radius: 3px;
+              transition: ease-in-out 0.3s;
+              padding: 0 3px;
+            }
+
+            /* Button */
+            #beads-plus {
+              position: relative;
+              background-color: var(--lightblue);
+              left: 10%;
+              top: -190px;
+              order: 1;
+              color: var(--white);
+              transform: scale(1.1);
+              animation: bg 60s ease-in-out infinite;
+            }
+
+            /* Button */
+            #beads-plus::before {
+              content: "+";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -105%);
+              font-weight: 900;
+              font-size: large;
+            }
+
+            #beads-plus:hover,
+            #beads-plus:active {
+              background-color: var(--darkblue);
+              color: var(--faderose);
+              transition: all 0.3s;
+            }
+
+             /* Whole Button */
+            #decades {
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: var(--lighterblue);
+              padding: 0 3px;
+              text-align: center;
+              top: -40px;
+              left: 40px;
+              transform: translate(-50%, -50%);
+              order: 2;
+              border: none;
+              border-radius: 3px;
+              transition: ease-in-out 0.3s;
+              width: fit-content;
+              background-color: black;
+            }
+
+            /* ...  Underneath Text  */
+            #decades__bottom{
+              position: absolute;
+              left: 15px;
+              top: -20px;
+              font-size: 0.8rem;
+              color: var(--rose);
+            }
+
+              /* BUTTON */
+            #rosaries {
+              position: absolute;
+              top: 40px;
+              left: 40px;
+              padding: 0 3px;
+              transform: translate(-50%, -50%);
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: var(--lightrose);
+              order: 1;
+              background: none;
+              border: none;
+              transition: ease-in-out 0.3s;
+              border-radius: 3px;
+              width: fit-content;
+              background-color: black;
+            }
+
+            /* ...  Underneath Text  */
+            #rosaries__bottom {
+              position: absolute;
+              left: 15px;
+              top: 60px;
+              font-size: 0.8rem;
+              color: var(--rose);
+            }
+
+            #beads-plus,
+            #reset-btn {
+              font-weight: 200;
+              width: 50px;
+              height: 50px;
+              border-radius: 50px;
+              font-size: 0.8rem;
+              transition: ease-in-out 0.3s;
+            }
+
+             #reset-btn {
+              order: 3;
+              position: relative;
+              left: 10px;
+              top: 40px;
+              background-color: var(--lightblue);
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            }
+
+            #reset-btn:hover,
+            #reset-btn:active {
+              background-color: var(--darkblue);
+              color: var(--lighterblue);
+              transition: all 0.3s;
+            }
+          
+/* -------------------------------------------------------------- */
+
+
+                /* ....  THE BUTTONS MYSTERIES SELECTION  ... */
+                     #the__mysteries__mode{
+                      width: 100%;
+                      margin: 0 45px;
+                      z-index: 9;
+                      top: 70px;
+                      left: 27%;
+                      scale: 1.3;
+                     }
+        
+            
+          .joyful_btn,
+          .light_btn,
+          .sorrowful_btn,
+          .glorious_btn {
+            display: flex;
+            position: relative;
+            justify-content: space-evenly; 
+            width: 400px;
+            height: 45px;
+            padding: 10px 20px 40px;
+            left: -125px;
+            top: -15px;
+            border-radius: 10px;
+            background: none;
+            border: 1px solid var(--lightblue);
+            color: inherit;
+            transform: scale(1);
+            letter-spacing: 1px;
+            margin: 0 10px;
+            cursor: pointer;
+            z-index: 9;
+            }
+
+
+            .mancoi{ 
+              display: none;
+            }
+            
+       
+
+          .joyful_btn:hover,
+          .light_btn:hover,
+          .sorrowful_btn:hover,
+          .glorious_btn:hover{
+            display: flex;
+            position: relative;
+            justify-content: space-evenly;
+            width: 400px;
+            height: 45px;
+            padding: 10px 20px 40px;
+            left: -125px;
+            top: -15px;
+            border-radius: 10px;
+            background: var(--darkerBlue);
+            border: 1px solid white;
+            color: white;
+            transform: scale(1);
+            letter-spacing: 1px;
+            margin: 0 10px;
+            cursor: pointer;
+            z-index: 9;
+            }
+
+            .joyful_btn:active,
+            .light_btn:active,
+            .sorrowful_btn:active,
+            .glorious_btn:active{
+              background-color: #3882dc;
+              color:black;
+              transform: scale(1.1);
+            }
+          
+        .sub__title{
+        position: absolute;
+        top: 60px;
+        font-size: 1.2rem;
+        right: 230px;
+        left: -200px;
+          color: var(--lightblue);
+        }
+
+        .mystery  p{
+        top: 105px;
+        right: 440px;
+        position: absolute;
+        width: 260px;
+        text-align: justify;
+        color: var(--offWhite);               
+
+        }
+
+        .mystery .IM{
+        transform: scale(1);
+        top: 0em;
+        left: -330px;
+        }
+/* ------------------------------------------------- */
+        .Gabriel{
+          display: block;
+          position: absolute;
+       }
+
+        .the_annunciation{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .Visitation{
+          position: absolute;
+          margin-top: -3.5em;
+        }
+
+        .the__visitation__text{
+            position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+          .Manger{
+          display: block;
+          position: absolute;
+        }
+
+       .JesusBirth{
+          position: relative;
+          top: 1em;
+          left: 1em;
+       }
+
+        .Presentation{
+          display: block;
+          position: absolute;
+          margin-top: 30px;
+        }
+
+
+        .Jesus_presentation_text{
+          position: relative;
+          top: 2em;
+          left: 1em;
+        }
+
+
+        .Found{
+          display: block;
+          position: absolute;
+          margin-top: 0em;
+        }
+    .Jesus__in__the__temple{
+          width: 250px;
+          margin-left: 230px;
+        }
+        .mystery .Temple{
+          position: absolute;
+          margin-top: 3em;
+        }
+        /* ---------------------------------------- */
+        .Baptismal{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+        }
+
+        .Jesus_Baptism_Text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+      
+        .Cana{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+        }
+
+        .Jesus_Cana_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .Repent{
+          display: block;
+          position: absolute;
+          top: 12em;
+        }
+        .The__kingdom__of__God{
+          width: 200px;
+          margin-left: 250px;
+        }
+        .mystery .Kingdom{
+          position: absolute;
+          margin-top: 3.5em;
+        }
+
+  
+        .Transfiguration{
+          display: block;
+          position: absolute;
+          margin-top: 0em;
+        }
+        .The__Transfiguration{
+          position: absolute;
+          margin-top: 0em;
+          left: -190px;
+        }
+
+        .Jesus_Transfiguration_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .theEucharist{
+          display: block;
+          position: absolute;
+          margin-top: 0em;
+        }
+  
+   .The__institution__of__the__Eucharist{
+          width: 200px;
+          margin-left: 250px;
+        }
+
+        .the_Eucharist_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+       .mystery .theEucharist{
+          position: absolute;
+          top: 5em;
+        }
+
+        /* ----------------------------------------------- */
+        .Gethsemane  {
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+
+        .Gethsemane_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .Scourging{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+
+        .scourging_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .crownThorn{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+
+        .crowning_thorns_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+
+        .JesusCarry{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+
+        .carrying_cross_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+       
+           .Crucified{
+          display: block;
+          position: absolute;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+
+        .mystery .crucifixion{
+          position: absolute;
+          top: 1.5em;
+        } 
+        
+        .Jesus_crucified_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+        }
+        /* ------------------------------------------------ */
+       .theResurrection{
+          position: absolute;
+          margin-top: 2em;
+        }
+
+      .Jesus_resurrection_text{
+          position: relative;
+          top: 1em;
+          left: 1em;
+}
+
+        .theAscension{
+          position: absolute;
+          margin-top: 0em;
+        }
+
+        .Jesus_Ascension_text{
+          position: relative;
+          top: 1em;
+          left: 1em;        }
+
+        .theHolySpirit{
+          position: absolute;
+          margin-top: -5em;
+        }
+
+        .descent_Holy_Spirit_text{
+          position: relative;
+          top: 2.5em;
+          left: 1em; 
+        }
+
+        .mystery .holyspirit{
+          top: 6.2rem;
+          position: absolute;
+        }
+
+        .theAssumption{
+          display: block;
+          position: absolute;
+          margin-top: -4em;
+        }
+
+        .The__Assumption_text{
+         position: relative;
+          top: 1em;
+          left: 1em; 
+        }
+
+        .QueenofHeaven{
+          position: absolute;
+          margin-top: 1em;
+        }
+         .The__crowning__Queen__of__Heaven{
+         width: 280px;
+         left: 1em;
+        }
+
+        /* Parra */
+       .mystery .queen{
+            top: 5em;
+          }
+        
+       .fifth__message{
+          margin-top: 5em;
+        }
+  }
+
+
+      

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rose: rgb(251, 45, 26);
+  --lightrose: rgb(252, 212, 212);
+  --faderose: rgba(253, 247, 247, 0.933);
+  --darkblue: rgb(39, 6, 135);
+  --darkerBlue: rgb(2, 2, 51);
+  --darkModeText: rgba(253, 174, 147, 0.721);
+  --lightblue: #1162d3;
+  --lightblue2: #e96dff;
+  --nav: rgba(247, 179, 179, 0.45);
+  --purple: rgb(155, 50, 240);
+  --lightpurple: rgb(241, 229, 252);
+  --softlightopal: rgb(210, 253, 241);
+  --lighterblue: rgb(212, 239, 252);
+  --black: black;
+  --white: #ffffff;
+  --offWhite: rgb(161, 196, 255);
+  --counterBG: rgba(255, 255, 255, 0.84);
+  --counterBorder: #f8a3a6;
+  --offScreenMenu: #a9c1e2;
+  --dark: rgb(47, 64, 94);
+  --green-popMsg: #00ff00;
+  --mysteries_active: rgb(124, 124, 199);
+  --test: #3079ff;
+  --test2: #a618ff;
+  --test3: #ff0000;
+  --test4: #3079ff;
+  --test5: #ff9094;
+}
+
+.gridContent {
+  display: grid;
+  width: 100%;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  padding: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: auto 320px auto;
+  grid-template-areas:
+    "title title title"
+    "ls content rs"
+    "ls content rs"
+    "ls footer rs";
+    z-index: 0;
+}
+
+
+              #bunches{
+                display: block;
+               pointer-events: none;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 86%;
+                left: 0px;
+                transition: all 3s ease;
+                animation: bunches 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #bunches.active{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 96%;
+                left: 0px;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+              #roses{
+                display: block;
+                pointer-events: none;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 92%;
+                left: 0px;
+                transition: all 3s ease;
+                animation: send_rose 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #roses.active{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 100%;
+                left: 0px;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+              /* animation: name duration timing-function(ease-in-out) delay iteration-count direction fill-mode; */
+
+              @keyframes bunches {
+                0%{
+                  transform: scale(1);
+                          }
+                30%{
+
+                  transform: scale(2);
+                }
+                100%{
+                  transform: scale(1);
+                  opacity: 0;
+                }
+           
+              }
+
+              @keyframes send_rose {
+                0%{
+                  transform: scale(1);
+                }
+                30%{
+
+                  transform: scale(2);
+                }
+                90%{
+                  opacity: 0.5;
+                }
+           
+                100%{
+                  transform: scale(1);
+                  opacity: 0;
+                }
+           
+              }
+
+ #HolyRosary.active{
+fill: #f677f6;
+opacity: 1;
+transition:  2s ease-in-out;
+/* transform: scale(1.1); */
+animation: holyrosary 3s ease-in-out 0 infinite alternate both;
+}
+@keyframes holyrosary {
+  0%{ transform: scale(1)}
+  20%{ fill: rgb(rgb(0, 209, 233))
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+.circle1.active{
+  fill: #01b7ff;
+  stroke-width: 30px;
+  stroke: rgb(198, 255, 167);
+  transition: ease 2s;
+  animation: beadsAnimation 3s ease-in-out 0 infinite alternate both;
+}
+/* name duration timing-function delay iteration-count direction fill-mode; */
+@keyframes beadsAnimation {
+  0%{ transform: scale(1)}
+  20%{ fill: rgb(rgb(0, 209, 233));
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+#RosaryString.active{
+  stroke:  #01b7ff;
+  stroke-width: 60px;
+  animation: RosaryStringAnimation 15s ease-in-out 0 infinite alternate both;
+}
+@keyframes RosaryStringAnimation {
+  0%{ transform: scale(1)}
+  20%{stroke:  rgb(255, 0, 0);
+     stroke-width: 25px;
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+
+polygon.active{
+  fill: rgb(255, 255, 255);
+  stroke-width: 60px;
+  stroke: rgb(255, 255, 255);
+}
+       

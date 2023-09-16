@@ -1,0 +1,47 @@
+/* THE HOLY ROSARY */
+#HolyRosary{
+  pointer-events: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  }
+
+  /* #HolyRosary circle{
+    fill:var(--lightrose);
+  } */
+  
+/* #Crucifix{
+  fill: var(--white);
+} */
+
+
+/* THE BIG BEADS */
+/* #First_Decade_Big,
+#Second_Decade_Big,
+#Third_Decade_Big,
+#Fourth_Decade_Big,
+#Fifth_Decade_Big{
+fill: var(--white);
+} */
+
+/* FIRST DECADE */
+
+/* #Fifth_Decade_Big{
+  fill: var(--green-popMsg);
+} */
+
+/* SECOND DECADE */
+/* #second1{
+} */
+
+
+/* THIRD DECADE */
+
+
+
+/* FOUTH DECADE */
+
+
+
+/* FIFTH DECADE */

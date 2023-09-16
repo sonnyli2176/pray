@@ -1,0 +1,636 @@
+
+          
+/* _________________ END OF MAXpx ________________ */
+          @media screen and (min-width: 769px){
+           body{
+             transition: all 2s ease-in-out;
+          }
+          
+        .GRID_WRAPPER {
+                display: grid;
+                margin: 20px auto;
+                min-width: 10%;
+                max-width: 100%;
+                height: 100dvh;
+                justify-content: center;
+                justify-self: center;
+                grid-template-columns: 1fr 768px 1fr;
+                grid-template-rows: 80px 60px auto;
+                z-index: 0;
+              }
+   
+ /* ...............Actual Red Rose Sub-heading.................. */
+              .make_sign,
+              .trinity,
+              .The_Apostles_Creed,
+              .our_father,
+              .hail_mary,
+              .the_eternal_father,
+              .holy_GOD,
+              .optional_closing_prayers 
+              {
+              top: 0px;
+              left: 0px;
+              color: var(--divine_mercy_red);
+              font-weight: 700;
+              text-align: center;
+            }
+
+              #chaplet_svg{
+              opacity: 0;
+              grid-column: 2/3;
+              grid-row: 3/4;
+              top: -160px;
+              left: 85%;
+              margin: 0;
+              padding: 0;
+              z-index: 1;
+              pointer-events: none;
+              transform: scale(2.8);
+            }
+
+              #chaplet_svg.active{
+              opacity: 1;
+              grid-column: 2/3;
+              grid-row: 3/4;
+              top: -160px;
+              left: 92%;
+              margin: 0;
+              padding: 0;
+              z-index: 1;
+              pointer-events: none;
+              transform: scale(2.8);
+              transition: all 2s ease;
+              }
+
+            .Jesus360{
+              display: none;
+              position: absolute;
+              padding: 0;
+              justify-self: center;
+              top: 90px;
+              justify-self: center;
+              z-index: 0;
+            }
+
+          .Jesus
+            {
+              grid-column: 2/3;
+              grid-row: 3/4;
+              display: block;
+              width: 100%;
+            }
+
+          .logo854{
+              top: -37px;
+              left: 0;
+              cursor: pointer;  
+              z-index: 1;
+            }
+
+       .fb {
+    top: -37px;
+    left: 98%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  /* Sun Moon Icon */
+  .sun {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 70%;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+
+            /* Sun Moon Icon */
+            .sun.active {
+              display: block;
+              position: absolute;
+              top: 2px;
+              left: 72%;
+              right: 50px;
+              margin: 0;
+              padding: 0;
+              cursor: pointer;
+              z-index: 7;
+            }
+ 
+        /* ==================================================== */
+            .title {
+              margin-top: -140px;
+              font-size: clamp(2rem, 4rem, 5.5rem);
+              top: -50px;
+              justify-self: center;
+              padding: 0 auto;
+              z-index: 2;
+
+            }
+  
+            .lets_pray_btn{
+              position: relative;
+              grid-column: 2/3;
+              grid-row: 3/4;
+              top: -62px;
+              left: 0px;
+              width: 100px;
+              height: fit-content;
+              padding: 5px 10px;
+              border: none;
+              border-top-left-radius: 7px;
+              border-bottom-left-radius: 7px;
+              cursor: pointer;
+              color: var(--divine_mercy_red);
+              background-color: var(--divine_mercy_black);
+              z-index: 9;
+            }
+
+            .small_cross{
+              top: 70px;
+              left: 125px;
+              position: absolute;
+            }
+
+            ul .home{
+              left: -105%;
+            }
+     
+              .home_icon{
+              grid-column: 2/3;
+              width: fit-content;
+              left: 30px;
+              top: -20px;
+              cursor: pointer;
+              z-index: 21;
+            }
+       
+                    .vi{
+                    grid-column: 2/3;
+                    display: block;
+                    width: fit-content;
+                    left: 12%;
+                    top: -22px;
+                    padding: 3px 7px;
+                    border: none;
+                    border-radius: 5px;
+                    z-index: 1;
+                    cursor: pointer;
+                    text-decoration: none !important;
+                    font-size: 0.7rem;
+                  }
+
+  .thePassion_Active {
+    display: none;
+    position: absolute;
+    top: 330px;
+    left: 800px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 2;
+  }
+
+  .thePassion_Active.active {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 1180px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 200px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 2;
+  }
+  .EternalFather_Active {
+    display: none;
+    position: absolute;
+    top: 250px;
+    left: 1180px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+  .EternalFather_Active.active {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 1180px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  .theHolyGod_Active {
+    display: none;
+    position: absolute;
+    top: 250px;
+    left: 1180px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 230px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  .theHolyGod_Active.active {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 1180px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 230px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+        #main_text_content{
+              position: relative;
+              grid-column: 2/3;
+              grid-row: 4/5;
+              columns: 2;
+              text-align: justify;
+              min-width: 700px;
+              max-width: 768px;
+              top: 0px;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              }
+              
+              #small_cross{
+              position: relative;
+              left: 52%;
+              top: -10px;
+              }
+
+              #make_sign{
+              position: relative;
+              text-align: center;
+              left: 2%;
+              }
+
+                 #trinity{
+                    position: relative;
+                    text-align: center;
+                    left: 2%;
+                  }
+
+                  
+                  .our_father{
+                    position: relative;
+                    margin-left:40%;
+                    padding-right: 200px;
+                    white-space: nowrap;                  
+                  }
+                  
+                  .hail_mary{
+                    position: relative;
+                    margin-left: 40%;
+                    padding-right: 150px;
+                    white-space: nowrap;
+                  }
+                  .The_Apostles_Creed{
+                    margin-left: 30%;
+                    position: relative;
+                    white-space: nowrap;                  
+                  }
+                  .the_eternal_father{
+                    position: relative;
+                    margin-left: 35%;
+                    padding-right: 200px;
+                    white-space: nowrap;                  
+                  }
+                  .the_sorrowful_passion{
+                    position: relative;
+                    margin-left: 25%;
+                    padding-right: 250px;
+                    white-space: nowrap;                  
+                  }
+                   .holy_GOD{
+                    position: relative;
+                    margin-left: 23%;
+                    white-space: nowrap;                  
+                  }
+                    .optional_closing_prayers{
+                    position: relative;
+                    margin-left: 25%;
+                    white-space: nowrap;                  
+                  }
+              
+                  .subheading{
+                    top: 0;
+                    left: 0%;
+                font-size: medium;
+                color:rgb(234, 207, 173);
+                  }
+
+                  .heart{
+                    position: relative;
+                    left: 17%;;
+                  }
+    
+     /* **************************   Beginning of Hamburger Nav **************************/
+              header {
+              display: flex;
+              justify-content: flex-end;
+              width: 100%;
+              height: 70px;
+              top: 150px;
+              margin: 0 auto;
+              padding: 0px;
+              box-sizing: border-box;
+              z-index: 0;
+            } 
+     
+            nav {
+              position: relative;
+              display: flex;
+              justify-content: flex-end;
+              width: 100%;
+              right: 0;
+              top: -150px;
+              left: 50px;
+              transition: all 0.5s ease-in-out;
+            }
+
+            .nav {
+              display: block;
+            }
+
+            .menu-ul {
+              position: relative;
+              left: 0%;
+              top: 160px;
+              display: flex;
+              list-style: none;
+              transition: all 0.3s ease-in-out;
+              max-width: 95%;
+              z-index: 5;
+            }
+
+
+            /* *********   This is where how text affected centering    **********/
+             .menu-ul li a {
+              display: block;
+              position: relative;
+              white-space: nowrap;
+              left: 0px;
+            }
+   
+           .man_coi, .home{
+              left: 0;
+              width: 100%;
+              text-align: center;
+              padding: 1px;
+              margin: 0;
+              z-index: 1;
+            }
+
+
+
+            .index{
+              position: relative;
+              left: -360px;
+              z-index: 1;
+            }
+
+            a{
+              height: 30px;
+              text-align: bottom;
+            }
+
+
+             .hamburger {
+              display: none;
+              position: absolute;
+              margin: 0;
+              right: 40px;
+              top: 3px;
+              height: 30px;
+              width: 30px;
+              cursor: pointer;
+              padding: 1rem;
+              z-index: 9;
+            }
+
+            
+            #counters-and-buttons-container{
+              display: block;
+              opacity: 0;
+              position: relative;
+              top: -178%;
+              padding: 0;
+              left: 340px;
+              z-index: 9;  
+              transition: all 2s ease;
+            }
+
+            #counters-and-buttons-container.active{
+              display: block;
+              opacity: 1;
+              position: relative;
+              padding: 0;              
+              top: -178%;
+              left: 310px;
+              z-index: 9;     
+              transition: all 2s ease;
+            }
+
+            #counters-container,
+            #buttons-container {
+            position: absolute;
+            transition: all 2s ease;
+             }
+
+            /*........ DIGIT .......*/
+            #beads {
+              position: absolute;
+              top: 60px;
+              left: 40px;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: var(--divine_mercy_red);
+              transform: translate(-50%, -105%);
+              background-color: black;
+              width: fit-content;
+              border: none;
+              border-radius: 3px;
+              transition: ease-in-out 0.3s;
+              padding: 0 3px;
+              order: 3;
+
+            }
+
+            /* BUTTON*/
+            #beads-plus {
+              position: relative;
+              left: 25%;
+              top: 70px;
+              order: 1;
+              color: var(--white);
+              background-color: rgb(155, 10, 10);
+              order: 1;
+              font-size: 0.8rem;
+              box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+              cursor: pointer;
+              width: 88px;
+              height: 30px;
+              letter-spacing: 1px;
+              padding: 0 5px;
+              border-radius: 0.7rem;
+              border: none;
+            }
+
+            /* Button */
+            #beads-plus::before {
+              content: "+";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -105%);
+              font-weight: 900;
+              font-size: large;
+            }
+
+        #beads-plus:hover
+ {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+  }
+  
+  #beads-plus:active {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+
+      /* DIGITS */
+              #decades {
+              position: absolute;
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: var(--divine_mercy_red);
+              padding: 0 3px;
+              text-align: center;
+              top: 160px;
+              left: 40px;
+              transform: translate(-50%, -50%);
+              order: 2;
+              border: none;
+              border-radius: 3px;
+              transition: ease-in-out 0.3s;
+              width: fit-content;
+              background-color: black;
+            }
+
+            /* ...  Underneath Text  */
+            #decades__bottom{
+              position: absolute;
+              left: 15px;
+              top: 180px;
+              font-size: 0.8rem;
+              color: var(--rose);
+            }
+
+              /* DIGIT */
+            #chaplets {
+              position: absolute;
+              top: 250px;
+              left: 40px;
+              padding: 0 3px;
+              transform: translate(-50%, -50%);
+              font-size: 1.8rem;
+              font-weight: 700;
+              color: var(--divine_mercy_red);
+              order: 1;
+              background: none;
+              border: none;
+              transition: ease-in-out 0.3s;
+              border-radius: 3px;
+              width: fit-content;
+              background-color: black;
+            }
+
+            /* ...  Underneath Text  */
+            #chaplets__bottom {
+              position: absolute;
+              left: 15px;
+              top: 265px;
+              font-size: 0.8rem;
+              color: var(--rose);
+            }
+
+            #beads-plus,
+            #reset-btn {
+              font-weight: 200;
+              width: 50px;
+              height: 50px;
+              border-radius: 50px;
+              font-size: 0.8rem;
+              transition: ease-in-out 0.3s;
+            }
+
+             #reset-btn {
+              color: var(--white);
+              border: none;
+              order: 3;
+              position: relative;
+              left: 15px;
+              top: 270px;
+              background-color: var(--divine_mercy_dark_Red);
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);            
+              cursor: pointer;
+            }
+
+            #reset-btn:hover
+ {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+  }
+  
+  #reset-btn:active {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+
+}
+
+      

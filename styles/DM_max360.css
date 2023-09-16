@@ -1,0 +1,687 @@
+/* ==============   screen and (max-width: 360px)   ======================= */
+@media screen and (max-width: 360px) {
+  .GRID_WRAPPER {
+    display: grid;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100dvh;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 80px 60px auto;
+    z-index: 0;
+    justify-content: center;
+    justify-self: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+  }
+  /* ...............Actual Red Rose Sub-heading.................. */
+  .make_sign,
+  .trinity,
+  .The_Apostles_Creed,
+  .our_father,
+  .hail_mary,
+  .the_eternal_father,
+  .holy_GOD,
+  .optional_closing_prayers {
+    top: 0px;
+    left: 0px;
+    color: var(--divine_mercy_red);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #chaplet_svg {
+    opacity: 0;
+    grid-column: 3/4;
+    top: -50px;
+    left: -385px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    pointer-events: none;
+    transform: scale(1.2);
+  }
+
+  #chaplet_svg.active {
+    grid-column: 3/4;
+    opacity: 1;
+    top: -50px;
+    left: -320px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    pointer-events: none;
+    transform: scale(1.2);
+    transition: all 2s ease;
+  }
+
+  .Jesus {
+    display: none;
+  }
+
+  .Jesus360 {
+    display: block;
+    grid-column: 3/4;
+    position: absolute;
+    min-width: 10%;
+    margin: 0;
+    padding: 0;
+    top: 45px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .logo854 {
+    position: absolute;
+    top: 12px;
+    left: 5%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .fb {
+    position: absolute;
+    top: 12px;
+    left: 65%;
+    cursor: pointer;
+    z-index: 1;
+    width: 27px;
+  }
+
+  /* Sun Moon Icon */
+  .sun {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 75%;
+    right: 50px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  /* Sun Moon Icon */
+  .sun.active {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 75%;
+    right: 50px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  /* ==================================================== */
+  .title {
+    position: absolute;
+    font-size: clamp(0.8rem, 2rem, 3.5rem);
+    top: 45px;
+    justify-self: center;
+    padding: 0 auto;
+    z-index: 2;
+  }
+
+  .lets_pray_btn {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    top: -105px;
+    left: 3px;
+    width: 95px;
+    height: fit-content;
+    padding: 3px 7px;
+    border: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    cursor: pointer;
+    color: var(--divine_mercy_red);
+    background-color: var(--divine_mercy_black);
+    z-index: 1;
+  }
+
+  .small_cross {
+    top: 70px;
+    left: 125px;
+    position: absolute;
+  }
+
+  .home_icon {
+    grid-column: 2/3;
+    width: fit-content;
+    left: 160px;
+    top: -20px;
+    cursor: pointer;
+    z-index: 21;
+  }
+
+  .vi {
+    grid-column: 2/3;
+    width: 40px;
+    left: 55%;
+    top: -22px;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size: 0.7rem;
+  }
+
+  /* #active_wrapper {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0%;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 220px;
+    transition: all 0.5s ease;
+    z-index: 2;
+  } */
+
+  .thePassion_Active {
+    display: none;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 2;
+  }
+
+  .thePassion_Active.active {
+    display: block;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 200px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 2;
+  }
+  .EternalFather_Active {
+    display: none;
+    position: absolute;
+    top: 340px;
+    left: 70px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+  .EternalFather_Active.active {
+    display: block;
+    position: absolute;
+    top: 330px;
+    left: 70px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 220px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  .theHolyGod_Active {
+    display: none;
+    position: absolute;
+    top: 325px;
+    left: 80px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 230px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  .theHolyGod_Active.active {
+    display: block;
+    position: absolute;
+    top: 325px;
+    left: 80px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 230px;
+    justify-self: flex-end;
+    background-color: black;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  #main_text_content {
+    grid-column: 2/4;
+    columns: 1;
+    text-align: justify;
+    max-width: 300px;
+    margin: 100px auto;
+    padding-right: 20px;
+    margin-top: 150px;
+  }
+
+  #small_cross {
+    position: relative;
+    left: 52%;
+  }
+
+  #make_sign {
+    position: relative;
+    text-align: center;
+    left: 2%;
+  }
+
+  #trinity {
+    position: relative;
+    text-align: center;
+    left: 2%;
+  }
+
+  .our_father {
+    position: relative;
+    margin-left: 37%;
+    padding-right: 200px;
+    white-space: nowrap;
+  }
+
+  .hail_mary {
+    position: relative;
+    margin-left: 37%;
+    padding-right: 150px;
+    white-space: nowrap;
+  }
+  .The_Apostles_Creed {
+    margin-left: 25%;
+    position: relative;
+    white-space: nowrap;
+  }
+  .the_eternal_father {
+    position: relative;
+    margin-left: 25%;
+    padding-right: 200px;
+    white-space: nowrap;
+  }
+  .the_sorrowful_passion {
+    position: relative;
+    margin-left: 15%;
+    padding-right: 250px;
+    white-space: nowrap;
+  }
+  .holy_GOD {
+    position: relative;
+    margin-left: 10%;
+    white-space: nowrap;
+  }
+  .optional_closing_prayers {
+    position: relative;
+    margin-left: 15%;
+    white-space: nowrap;
+  }
+
+  .subheading {
+    top: 0;
+    left: 0%;
+    font-size: medium;
+    color: rgb(234, 207, 173);
+  }
+
+  .heart {
+    position: relative;
+    left: 5%;
+  }
+
+  /* **************************   Beginning of Hamburger Nav **************************/
+  header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70px;
+    top: 150px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+    left: 130px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+  }
+
+  .menu-ul {
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+    top: 120px;
+  }
+
+  /* *********   This is where how text affected centering    **********/
+  .menu-ul li a {
+    display: block;
+    min-width: 100%;
+    color: var(--divine_mercy_text_dark);
+    background-color: var(--divine_mercy_dark_Red);
+    left: 10px;
+  }
+
+  .menu-ul li a:hover {
+    background-color: rgb(54, 71, 121);
+    color: rgb(162, 199, 211);
+  }
+
+  .index,
+  .man_coi,
+  .home,
+  .links {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+  }
+  a {
+    height: 30px;
+    text-align: bottom;
+  }
+
+  .hamburger {
+    position: absolute;
+    margin: 0;
+    right: 10px;
+    top: 3px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 9;
+  }
+
+  .hamburger.active {
+    position: absolute;
+    margin: 0;
+    right: 10px;
+    top: 3px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 9;
+  }
+
+  .bar {
+    width: 70%;
+    height: 4px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 1px;
+    transition: transform 0.6s, opacity 0.8s, top 0.6s;
+    z-index: 4;
+  }
+
+  /* ==================    Hamburger Settings   ===================== */
+  .bar-top {
+    top: 25%;
+  }
+
+  .bar-bot {
+    top: 75%;
+  }
+
+  /* ==================    Hamburger Active Effects   ===================== */
+  .hamburger.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+
+  .hamburger.active .bar-mid {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar-bot {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+  /* End of Hamburger Nav */
+
+  #counters-and-buttons-container {
+    display: block;
+    opacity: 0;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    top: -100%;
+    left: 250px;
+    z-index: 9;
+    transition: all 2s ease;
+  }
+
+  #counters-and-buttons-container.active {
+    display: block;
+    position: relative;
+    padding: 0;
+    top: -103%;
+    left: 250px;
+    z-index: 9;
+    transition: all 2s ease;
+  }
+
+  #counters-container,
+  #buttons-container {
+    position: absolute;
+    transition: all 2s ease;
+  }
+
+  /*........ DIGIT .......*/
+  #beads {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--divine_mercy_red);
+    transform: translate(-50%, -105%);
+    background-color: black;
+    width: fit-content;
+    border: none;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+    padding: 0 3px;
+    order: 3;
+  }
+
+  /* BUTTON*/
+  #beads-plus {
+    position: relative;
+    left: 25%;
+    top: 70px;
+    order: 1;
+    color: var(--white);
+    background-color: rgb(155, 10, 10);
+    order: 1;
+    font-size: 0.8rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 88px;
+    height: 30px;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    border-radius: 0.7rem;
+    border: none;
+  }
+
+  /* Button */
+  #beads-plus::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -105%);
+    font-weight: 900;
+    font-size: large;
+  }
+
+  #beads-plus:hover {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+  }
+
+  #beads-plus:active {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+
+  /* DIGITS */
+  #decades {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--divine_mercy_red);
+    padding: 0 3px;
+    text-align: center;
+    top: 160px;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    order: 2;
+    border: none;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+    width: fit-content;
+    background-color: black;
+  }
+
+  /* ...  Underneath Text  */
+  #decades__bottom {
+    position: absolute;
+    left: 15px;
+    top: 180px;
+    font-size: 0.8rem;
+    color: var(--rose);
+  }
+
+  /* DIGIT */
+  #chaplets {
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    padding: 0 3px;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--divine_mercy_red);
+    order: 1;
+    background: none;
+    border: none;
+    transition: ease-in-out 0.3s;
+    border-radius: 3px;
+    width: fit-content;
+    background-color: black;
+  }
+
+  /* ...  Underneath Text  */
+  #chaplets__bottom {
+    position: absolute;
+    left: 15px;
+    top: 250px;
+    font-size: 0.8rem;
+    color: var(--rose);
+  }
+
+  #beads-plus,
+  #reset-btn {
+    font-weight: 200;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    transition: ease-in-out 0.3s;
+  }
+
+  #reset-btn {
+    color: var(--white);
+    border: none;
+    order: 3;
+    position: relative;
+    left: 15px;
+    top: 240px;
+    background-color: var(--divine_mercy_dark_Red);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #reset-btn:hover {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+  }
+
+  #reset-btn:active {
+    background-color: var(--divine_mercy_black);
+    color: var(--divine_mercy_red);
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+}
+/* -------------------------------------------------------------- */

@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rose: #fb2d1a;
+  --lightrose: rgb(252, 212, 212);
+  --faderose: rgba(253, 247, 247, 0.933);
+  --darkblue: rgb(39, 6, 135);
+  --darkerBlue: rgb(2, 2, 51);
+  --bgDark: #020233;
+  --bg: #4a8cff;
+  --darkModeText: rgba(253, 174, 147, 0.721);
+  --lightblue: #1162d3;
+  --subtitle: #a8ceff;
+  --nav: rgba(247, 179, 179, 0.45);
+  --purple: rgb(155, 50, 240);
+  --lightpurple: rgb(241, 229, 252);
+  --softlightopal: rgb(210, 253, 241);
+  --lighterblue: rgb(212, 239, 252);
+  --black: black;
+  --white: white;
+  --offWhite: #a1c4ff;
+  --counterBG: rgba(255, 255, 255, 0.84);
+  --counterBorder: rgb(248, 163, 166);
+  --offScreenMenu: #a9c1e2;
+  --dark: rgb(47, 64, 94);
+  --green-popMsg: #00ff00;
+  --mysteries_active: rgb(124, 124, 199);
+}
+
+.gridContent {
+  display: grid;
+  width: 100%;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  padding: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: auto 320px auto;
+  grid-template-areas:
+    "title title title"
+    "ls content rs"
+    "ls content rs"
+    "ls footer rs";
+    z-index: 0;
+}
+
+
+
+            .VI{
+              position: relative;
+              margin:0;
+              padding:3px 6px 2px 6px;
+              width: fit-content;
+              height: auto;
+              top: -16px;
+              left: 22%;
+              font-size: 12px;
+              z-index: 1;
+              cursor: pointer;
+              color: var(--lighterblue);
+              background-color: var(--lightblue);
+              border-radius: 7px;
+              border: none;
+              letter-spacing: 1px;
+            }
+            
+            .VI:hover{
+              position: relative;
+              margin:0;
+              width: fit-content;
+              padding:3px 6px 2px 6px;
+              height: auto;
+              top: -16px;
+              left: 22%;
+              font-size: 12px;
+              z-index: 1;
+              cursor: pointer;
+              color: var(--lighterblue);
+      
+            }
+            
+            .VI:active{
+              color: rgb(255, 255, 255);
+              border: 1px solid white;
+              }
+
+              #bunches{
+                display: block;
+                pointer-events: none;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 86%;
+                left: 0px;
+                transition: all 3s ease;
+                animation: bunches 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #bunches.active{
+                direction: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 96%;
+                left: 0px;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+              #roses{
+                display: block;
+                pointer-events: none;
+                opacity: 0;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 92%;
+                left: 0px;
+                transition: all 3s ease;
+                animation: send_rose 3s ease-in-out 0 1 forwards both;
+                z-index: 10;
+              }
+              #roses.active{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 100%;
+                left: 0px;
+                transition: all 3s ease;
+                z-index: 10;
+              }
+              /* animation: name duration timing-function(ease-in-out) delay iteration-count direction fill-mode; */
+              @keyframes bunches {
+                0%{
+                  transform: scale(1);
+                          }
+                30%{
+
+                  transform: scale(2);
+                }
+                100%{
+                  transform: scale(1);
+                  opacity: 0;
+                }
+           
+              }
+
+              @keyframes send_rose {
+                0%{
+                  transform: scale(1);
+                }
+                30%{
+
+                  transform: scale(2);
+                }
+                90%{
+                  opacity: 0.5;
+                }
+           
+                100%{
+                  transform: scale(1);
+                  opacity: 0;
+                }
+           
+              }
+
+.mystery p{
+  color: var(--mysteries_active);
+}
+
+
+/* ....  THE BUTTONS DIV CONTAINER MYSTERIES SELECTION  ... */
+#the__mysteries__mode {
+  display: flex;
+  position: relative;
+  z-index: 999;
+  background-color: none;
+  min-width: 340px;
+  max-width: 360px;
+  max-height: auto;
+  top: 2%;
+  margin-left: 1.5em;
+}
+
+/* ....  THE BUTTONS MYSTERIES SELECTION  ... */
+
+.joyful_btn,
+.light_btn,
+.sorrowful_btn,
+.glorious_btn {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  padding: 5px;
+  left: -15px;
+  top: 65px;
+  border-radius: 10px;
+  background: none;
+  border: var(--lightblue);
+  color: inherit;
+  transform: scale(0.8);
+  letter-spacing: 1px;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.joyful_btn:hover,
+.light_btn:hover,
+.sorrowful_btn:hover,
+.glorious_btn:hover {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  padding: 5px;
+  left: -15px;
+  top: 65px;
+  background-color: var(--darkerBlue);
+  border-radius: 10px;
+  border: 1px solid white;
+  color: var(--lighterblue);
+  transform: scale(0.8);
+  letter-spacing: 1px;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* SunIcon */
+.sun {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* Gallery images */
+.imgPic {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mancoi:hover{
+  transform: scale(1.1);
+}
+
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hamburger {
+  grid-area: ham;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 83%;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.menu-ul {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.list-li a{
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  color:var(--offwhite);
+    transition: all 0.3s ease;
+
+}
+
+.menu-ul a:hover {
+  font-weight: 700;
+  color: var(--rose);
+}
+.menu-ul a:active {
+  color: var(--green-popMsg);
+}
+
+
+
+#HolyRosary{
+  z-index: 1;
+  grid-area: title;
+}
+
+.title {
+  grid-area: title;
+  width: clamp(250px 290px 320px);
+  font-family: "Great Vibes", cursive !important;
+  font-family: "Luxurious Script", cursive !important;
+  font-size: 3.6rem;
+  color: var(--rose);
+  text-align: center;
+  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  position: absolute;
+  margin-top: -4px;
+  z-index: 0;
+}
+.titleDark {
+  grid-area: title;
+  width: clamp(250px 290px 320px);
+  font-family: "Great Vibes", cursive !important;
+  font-family: "Luxurious Script", cursive !important;
+  font-size: 3.6rem;
+  color: var(--lighterblue);
+  text-align: center;
+  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  position: absolute;
+  margin-top: -4px;
+  z-index: 0;
+}
+
+.textLight {
+  grid-area: content;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--lightpurple),
+    var(--faderose),
+    var(--softlightopal),
+    var(--faderose),
+    var(--softlightopal)
+  );
+  border-radius: 25px;
+  text-align: center;
+  justify-self: center;
+  padding: 0px 15px;
+  font-size: 1rem;
+  color: var(--black);
+  margin: -1.5rem 1.5rem auto;
+  z-index: -1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  .title {
+    color: var(--lightblue);
+  }
+}
+
+.textLight p{
+ text-align: justify;
+ left: 5px;
+ position: relative;
+}
+
+/* The Text Content*/
+.textDark {
+  grid-area: content;
+  background-image: linear-gradient(
+    to top left,
+    var(--darkblue),
+    var(--darkerBlue)
+  );
+  color: var(--offWhite);
+  border: 1px solid rgba(0, 195, 255, 0.448);
+  border-radius: 25px;
+  text-align: center;
+  justify-self: center;
+  padding: 0px 15px;
+  font-size: 1rem;
+  margin: -1.5rem 1.5rem auto;
+  z-index: -1;
+  box-shadow: 5px 5px 5px rgba(61, 184, 255, 0.41);
+  position: relative;
+  /* SUBHEADING DarkTheme */
+  .darkSub {
+    color: var(--lightblue);
+  }
+}
+
+.signCross {
+  color: var(--rose);
+  position: relative;
+  top: -2rem;
+}
+
+/* Actual Red Rose Sub-heading */
+.start,
+.creed,
+.ourFatherTitle,
+.hailM,
+.glory,
+.hailHolyQueen,
+.conclude,
+.heart,
+.comment,
+.clickLink {
+  color: var(--rose);
+  font-weight: 700;
+}
+
+.start,
+.makeSign,
+.hailMary,
+.ourFather,
+.theCreed,
+.signCross,
+.gloryBe,
+.oMyJesus,
+.closing,
+.conclude,
+.bottom,
+.heart,
+a {
+  text-align: center;
+  position: relative;
+  top: -2rem;
+}
+
+.link,
+a {
+  text-decoration: none;
+  color: var(--lightblue);
+}
+
+#Mysteries_Container{      
+pointer-events: none;  
+overflow: none; 
+  }
+#counters-and-buttons-container {
+  display: none;
+  position: relative;
+  width: fit-content;
+  height: auto;
+  margin: 0;
+  padding:0;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+#counters-container,
+#buttons-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding:0;
+
+}
+
+#beads-plus {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 88px;
+  height: 30px;
+  letter-spacing: 1px;
+  padding: 0 5px;
+  border-radius: 0.7rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--darkblue);
+}
+
+#beads-plus,
+#reset-btn {
+  margin: 0 5px;
+}
+
+#beads-plus:hover:active {
+  box-shadow: 0px 0px 10px rgba(100, 183, 251, 0.8);
+}
+
+#reset-btn:hover:active {
+  box-shadow: 0px 0px 10px rgba(100, 183, 251, 0.8);
+}
+
+#reset-btn {
+  font-size: 0.8rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 88px;
+  height: 30px;
+  letter-spacing: 1px;
+  padding: 0 3px;
+  border-radius: 0.7rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--lightblue);
+}
+
+/* 0 */
+#beads {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--offwhite);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* WHOLE BUTTON */
+#decades {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--offwhite);
+  padding: 0 30px;
+}
+
+/* WHOLE BUTTON */
+#rosaries {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--offwhite);
+}
+
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: radial-gradient(
+    farthest-corner at 200px 200px,
+    pink ,
+    var(--faderose),
+    rgb(22, 173, 255)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+
+/* Dark Theme Body background-image color*/
+.darkMode {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: radial-gradient(
+    farthest-corner at 200px 200px,
+    var(--darkblue),
+    rgb(52, 72, 184),
+    rgb(118, 7, 183)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 0;
+  color: var(--offWhite);
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#HolyRosary.active{
+fill: #f677f6;
+opacity: 1;
+transition:  2s ease-in-out;
+/* transform: scale(1.1); */
+animation: holyrosary 3s ease-in-out 0 infinite alternate both;
+}
+@keyframes holyrosary {
+  0%{ transform: scale(1)}
+  20%{ fill: rgb(rgb(0, 209, 233))
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+.circle1.active{
+  fill: #01b7ff;
+  stroke-width: 30px;
+  stroke: rgb(198, 255, 167);
+  transition: ease 2s;
+  animation: beadsAnimation 3s ease-in-out 0 infinite alternate both;
+}
+/* name duration timing-function delay iteration-count direction fill-mode; */
+@keyframes beadsAnimation {
+  0%{ transform: scale(1)}
+  20%{ fill: rgb(rgb(0, 209, 233));
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+#RosaryString.active{
+  stroke:  #1fffff;
+  stroke-width: 60px;
+  animation: RosaryStringAnimation 15s ease-in-out 0 infinite alternate both;
+}
+@keyframes RosaryStringAnimation {
+  0%{ transform: scale(1)}
+  20%{stroke:  rgb(255, 0, 0);
+     stroke-width: 25px;
+}
+  50%{ transform: scale(2)}
+  100%{ transform: scale(1)}
+}
+
+
+polygon.active{
+  fill: rgb(255, 255, 255);
+  stroke-width: 60px;
+  stroke: rgb(255, 255, 255);
+}
+
+
