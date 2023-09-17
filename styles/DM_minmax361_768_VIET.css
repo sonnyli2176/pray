@@ -33,7 +33,7 @@
               #chaplet_svg{
               grid-column: 2/3;
               opacity: 0;
-              top: -125px;
+              top: 50px;
               left: -10px;
               margin: 0;
               padding: 0;
@@ -45,7 +45,7 @@
               #chaplet_svg.active{
               grid-column: 2/3;
               opacity: 1;
-              top: -125px;
+              top: 50px;
               left: 40px;
               margin: 0;
               padding: 0;
@@ -176,7 +176,7 @@
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: 330px;
+    top: 500px;
     left: 80px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -192,7 +192,7 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: 330px;
+    top: 500px;
     left: 80px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -207,7 +207,7 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: 340px;
+    top: 500px;
     left: 70px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -222,7 +222,7 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: 330px;
+    top: 500px;
     left: 70px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -238,7 +238,7 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: 325px;
+    top: 500px;
     left: 80px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -254,7 +254,7 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: 325px;
+    top: 500px;
     left: 80px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -509,7 +509,7 @@
               display: block;
               position: relative;
               padding: 0;              
-              top: -115%;
+              top: -110%;
               left: 290px;
               z-index: 9;     
               transition: all 2s ease;
