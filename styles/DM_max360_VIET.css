@@ -276,12 +276,13 @@
               max-width: 300px;
               margin: 100px auto;
               padding-right: 20px;
-              margin-top: 150px;
+              margin-top: 400px;
               }
               
               #small_cross{
               position: relative;
-              left: 52%;
+              left: 51%;
+              top: -10px;
               }
 
               #make_sign{
@@ -306,18 +307,18 @@
                   
                   .hail_mary{
                     position: relative;
-                    margin-left: 18%;
+                    margin-left: 20%;
                     padding-right: 150px;
                     white-space: nowrap;
                   }
                   .The_Apostles_Creed{
-                    margin-left: 30%;
+                    margin-left: 32%;
                     position: relative;
                     white-space: nowrap;                  
                   }
                   .the_eternal_father{
                     position: relative;
-                    margin-left: 18%;
+                    margin-left: 19%;
                     padding-right: 200px;
                     white-space: nowrap;                  
                   }
@@ -347,7 +348,7 @@
 
                   .heart{
                     position: relative;
-                    left: 5%;;
+                    left: 10%;;
                   }
     
      /* **************************   Beginning of Hamburger Nav **************************/
@@ -507,7 +508,7 @@
               display: block;
               position: relative;
               padding: 0;              
-              top: -103%;
+              top: -115%;
               left: 250px;
               z-index: 9;     
               transition: all 2s ease;

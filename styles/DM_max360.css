@@ -176,20 +176,6 @@
     font-size: 0.7rem;
   }
 
-  /* #active_wrapper {
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 0%;
-    border-radius: 5px;
-    padding: 8px 10px;
-    text-align: center;
-    min-width: 200px;
-    max-width: 220px;
-    transition: all 0.5s ease;
-    z-index: 2;
-  } */
-
   .thePassion_Active {
     display: none;
     position: absolute;
@@ -291,12 +277,13 @@
     max-width: 300px;
     margin: 100px auto;
     padding-right: 20px;
-    margin-top: 150px;
+    margin-top: 400px;
   }
 
   #small_cross {
     position: relative;
-    left: 52%;
+    left: 51%;
+    top: -10px;
   }
 
   #make_sign {
@@ -331,7 +318,7 @@
   }
   .the_eternal_father {
     position: relative;
-    margin-left: 25%;
+    margin-left: 26%;
     padding-right: 200px;
     white-space: nowrap;
   }
@@ -343,12 +330,12 @@
   }
   .holy_GOD {
     position: relative;
-    margin-left: 10%;
+    margin-left: 12%;
     white-space: nowrap;
   }
   .optional_closing_prayers {
     position: relative;
-    margin-left: 15%;
+    margin-left: 18%;
     white-space: nowrap;
   }
 
@@ -361,7 +348,7 @@
 
   .heart {
     position: relative;
-    left: 5%;
+    left: 10%;
   }
 
   /* **************************   Beginning of Hamburger Nav **************************/
@@ -519,7 +506,7 @@
     display: block;
     position: relative;
     padding: 0;
-    top: -103%;
+    top: -112%;
     left: 250px;
     z-index: 9;
     transition: all 2s ease;

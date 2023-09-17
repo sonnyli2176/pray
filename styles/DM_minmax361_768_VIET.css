@@ -273,10 +273,10 @@
               columns: 1;
               text-align: justify;
               max-width: 360px;
-              top: 70px;
               left: 0;
               align-self: center;
               margin: 0 auto;
+              margin-top: 320px;
               }
               
               #small_cross{
@@ -509,7 +509,7 @@
               display: block;
               position: relative;
               padding: 0;              
-              top: -105%;
+              top: -115%;
               left: 290px;
               z-index: 9;     
               transition: all 2s ease;
