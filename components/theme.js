@@ -22,6 +22,16 @@ let titleStorage = localStorage.getItem("title");
         sun.classList.toggle("active");
       });
 
+
+// CLOSING HAM
+document.addEventListener('click', (e) => {
+  if (!hamMenu.contains(e.target) && !navMenu.contains(e.target)) {
+    hamMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+});
+
+
 // BODY MAIN BACKGROUND THEME
 const enableDark = () => {
     document.body.classList.toggle("darkMode");
