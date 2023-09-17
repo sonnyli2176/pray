@@ -327,11 +327,6 @@ nav {
   color: var(--green-popMsg);
 }
 
-  /* SUBHEADING DarkTheme */
-  /* .darkSub {
-    color: var(--lightblue);
-  } */
-
 #HolyRosary{
   z-index: 1;
   grid-area: title;
@@ -656,4 +651,9 @@ polygon.active{
   stroke: rgb(255, 255, 255);
 }
 
-
+.subheading{
+  color: var(--rose);
+}
+.subheading.active{
+  color: var(--subtitle);
+}

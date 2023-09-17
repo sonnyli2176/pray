@@ -940,6 +940,13 @@ a {
        .fifth__message{
           margin-top: 5em;
         }
+
+    .subheading{
+  color: var(--rose);
+}
+.subheading.active{
+  color: var(--subtitle);
+}
   }
 
 

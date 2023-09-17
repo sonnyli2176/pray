@@ -1040,5 +1040,13 @@
               color: var(--lighterblue);
               transition: all 0.3s;
             }
-          }
+          
 /* -------------------------------------------------------------- */
+.subheading{
+  color: var(--rose);
+}
+.subheading.active{
+  color: var(--subtitle);
+}
+
+}

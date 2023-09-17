@@ -193,3 +193,9 @@ polygon.active{
   stroke: rgb(255, 255, 255);
 }
        
+.subheading{
+  color: var(--rose);
+}
+.subheading.active{
+  color: var(--subtitle);
+}

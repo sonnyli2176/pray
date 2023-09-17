@@ -845,7 +845,15 @@ a,
        .mystery .queen{
             top: 6.5em;
           }
-        }
+
+          .subheading{
+  color: var(--rose);
+}
+.subheading.active{
+  color: var(--subtitle);
+}
+
+}
 
 
       
