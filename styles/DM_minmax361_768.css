@@ -118,14 +118,24 @@
                           /* ==================================================== */
             .title {
               position: absolute;
+              color: var(--white);
               font-size: clamp(0.8rem, 2rem, 3.5rem);
               top: 50px;
               justify-self: center;
               padding: 0 auto;
               z-index: 2;
             }
-  
-            .lets_pray_btn{
+            .titleDark {
+              position: absolute;
+              color: var(--divine_mercy_text_dark);
+              font-size: clamp(0.8rem, 2rem, 3.5rem);
+              top: 50px;
+              justify-self: center;
+              padding: 0 auto;
+              z-index: 2;
+            }
+
+              .lets_pray_btn{
               position: relative;
               grid-column: 2/3;
               grid-row: 4/5;

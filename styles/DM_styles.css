@@ -179,6 +179,22 @@ body{
                     font-family: "Luxurious Script", cursive !important;           
                     transition: all 0.3s ease;
                   }
+                  
+                    .titleDark{
+                    width: clamp(250px 290px 320px);
+                    grid-column: 2/3;
+                    grid-row: 3/4;
+                    padding-bottom: 9px;
+                    justify-self: center;
+                    color: var(--darkModeText);
+                    text-align: center;
+                    white-space: nowrap;
+                    font-size: clamp(0.8rem, 1.5rem,3rem);
+                    font-family: "Great Vibes", cursive !important;
+                    font-family: "Luxurious Script", cursive !important;           
+                    transition: all 0.3s ease;
+                  }
+
                     
                     
                     .lets_pray_btn{
@@ -407,22 +423,6 @@ body{
                     color: var(--green-popMsg);
                   }
 
-
-
-.titleDark {
-  width: clamp(250px 290px 320px);
-  font-family: "Great Vibes", cursive !important;
-  font-family: "Luxurious Script", cursive !important;
-  font-size: 3.6rem;
-  color: var(--lighterblue);
-  text-align: center;
-  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.3);
-  white-space: nowrap;
-  position: absolute;
-  margin-top: -4px;
-}
-
-
 #beads-plus {
   position: absolute;
   top: 40px;
@@ -648,10 +648,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  .title{
-          color: var(--divine_mercy_text_dark);
-  }
-
 }
 
 
