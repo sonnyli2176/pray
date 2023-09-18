@@ -607,7 +607,7 @@ a,
             top: -15px;
             border-radius: 10px;
             background: none;
-            border: 1px solid var(--lightblue);
+            border: 2px solid var(--lightblue);
             color: inherit;
             transform: scale(0.9);
             letter-spacing: 1px;
@@ -631,7 +631,7 @@ a,
             top: -15px;
             border-radius: 10px;
             background: var(--darkerBlue);
-            border: 1px solid white;
+            border: 2px solid white;
             color: white;
             transform: scale(0.9);
             letter-spacing: 1px;

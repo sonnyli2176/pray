@@ -212,7 +212,7 @@
     width: 360px;
     height: 470vh;
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
   }
 
   .textDark {
@@ -222,7 +222,7 @@
     width: 360px;
     height: 470vh;
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
   }
 
   .textLight p {
@@ -310,7 +310,7 @@
     padding: 5px 10px;
     left: -5px;
     top: 65px;
-    border: 1px solid var(--lightblue);
+    border: 2px solid var(--lightblue);
     border-radius: 10px;
     background: none;
     color: inherit;
@@ -333,7 +333,7 @@
     padding: 5px 10px;
     left: -5px;
     top: 65px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
     transform: scale(0.9);
     letter-spacing: 1px;

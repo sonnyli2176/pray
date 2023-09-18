@@ -210,7 +210,7 @@
   top: 65px;
   border-radius: 10px;
   background: none;
-  border: var(--lightblue);
+  border: 2px solid var(--lightblue);
   color: inherit;
   transform: scale(0.8);
   letter-spacing: 1px;
@@ -233,7 +233,7 @@
   top: 65px;
   background-color: var(--darkerBlue);
   border-radius: 10px;
-  border: 1px solid white;
+  border: 2px solid white;
   color: var(--lighterblue);
   transform: scale(0.8);
   letter-spacing: 1px;
@@ -251,13 +251,6 @@
   right: 60px;
   cursor: pointer;
   z-index: 4;
-}
-
-/* Gallery images */
-.imgPic {
-  width: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 .mancoi:hover{
@@ -363,14 +356,14 @@ nav {
 
 .textLight {
   grid-area: content;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom right,
     var(--lightpurple),
     var(--faderose),
     var(--softlightopal),
     var(--faderose),
     var(--softlightopal)
-  );
+  ); */
   border-radius: 25px;
   text-align: center;
   justify-self: center;
@@ -392,11 +385,11 @@ nav {
 /* The Text Content*/
 .textDark {
   grid-area: content;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top left,
     var(--darkblue),
     var(--darkerBlue)
-  );
+  ); */
   color: var(--offWhite);
   border: 1px solid rgba(0, 195, 255, 0.448);
   border-radius: 25px;
