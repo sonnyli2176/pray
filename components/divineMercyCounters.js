@@ -114,6 +114,20 @@ function updateDisplay() {
   chapletsDisplay.innerText = chaplets;
 }
 
+// const links = document.getElementsByTagName("a");
+const buttons = document.querySelectorAll("button");
+const audio = new Audio("./sound/click.mp3");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+// links.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     audio.play();
+//   });
+// });
+
 // const browserMessage = document.getElementById("chromeBrowser");
 //  let ba = ['Chrome','Firefox','Safari','Opera','Edg' || 'Edge'];
 // let b, ua = navigator.userAgent;
