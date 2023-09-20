@@ -356,14 +356,14 @@ nav {
 
 .textLight {
   grid-area: content;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom right,
     var(--lightpurple),
     var(--faderose),
     var(--softlightopal),
     var(--faderose),
     var(--softlightopal)
-  ); */
+  );
   border-radius: 25px;
   text-align: center;
   justify-self: center;
@@ -385,11 +385,11 @@ nav {
 /* The Text Content*/
 .textDark {
   grid-area: content;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to top left,
     var(--darkblue),
     var(--darkerBlue)
-  ); */
+  );
   color: var(--offWhite);
   border: 1px solid rgba(0, 195, 255, 0.448);
   border-radius: 25px;
