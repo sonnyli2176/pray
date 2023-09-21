@@ -399,7 +399,7 @@
               list-style: none;
               transition: all 0.3s ease-in-out;
               max-width: 95%;
-              z-index: 5;
+              z-index: 100;
             }
 
 
