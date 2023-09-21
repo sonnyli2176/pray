@@ -188,8 +188,8 @@ function resetPrayers() {
     for (let i = 0; i < circleElements.length; i++) {
       const circleEl = circleElements[i];
       // Set the initial fill color of the circle element and store the original fill color
-      circleEl.setAttribute("fill", "#CB7246");
-      circleEl.setAttribute("data-original-fill", "#CB7246");
+      circleEl.setAttribute("fill", "#7abbde");
+      circleEl.setAttribute("data-original-fill", "#7abbde");
 
       // Reset the Fill Attribute to previous state;
       if (circleEl.hasAttribute("data-original-fill")) {
@@ -269,7 +269,7 @@ function incrementCount() {
       
     first10.setAttribute("fill", "rgb(58, 10, 10)");
       setTimeout(() => {
-        firstBigDecade.setAttribute("fill", "rgb(188, 0, 0)");
+        firstBigDecade.setAttribute("fill", "#a812ff");
       }, 3000);
       removeThePassionPrayers();
       reactivateTheEternalFather();
@@ -310,7 +310,7 @@ function incrementCount() {
   if (beads === 20) {
     second10.setAttribute("fill", "rgb(58, 10, 10)");
         setTimeout(() => {
-          secondBigDecade.setAttribute("fill", "rgb(188, 0, 0)");
+          secondBigDecade.setAttribute("fill", "#a812ff");
         }, 3000);
       removeThePassionPrayers();
       reactivateTheEternalFather();
@@ -350,7 +350,7 @@ function incrementCount() {
   if (beads === 30) {
     third10.setAttribute("fill", "rgb(58, 10, 10)");
         setTimeout(() => {
-          thirdBigDecade.setAttribute("fill", "rgb(188, 0, 0)");
+          thirdBigDecade.setAttribute("fill", "#a812ff");
         }, 3000);
   removeThePassionPrayers();
   reactivateTheEternalFather();
@@ -390,8 +390,8 @@ function incrementCount() {
   if (beads === 40) {
     fourth10.setAttribute("fill", "rgb(58, 10, 10)");
         setTimeout(() => {
-          fourthBigDecade.setAttribute("fill", "rgb(188, 0, 0)");
-        }, 3000);
+          fourthBigDecade.setAttribute("fill", "#a812ff");
+           }, 3000);
    removeThePassionPrayers();
    reactivateTheEternalFather();
    updateDisplay();
@@ -435,7 +435,7 @@ function incrementCount() {
         activetheHolyGod();
     
     setTimeout(() => {
-      fifthBigDecade.setAttribute("fill", "rgb(188, 0, 0)");
+      fifthBigDecade.setAttribute("fill", "#a812ff");
     }, 3000);
 
       setTimeout(() => {
