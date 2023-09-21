@@ -146,7 +146,7 @@
               cursor: pointer;
               color: var(--divine_mercy_red);
               background-color: var(--divine_mercy_black);
-              z-index: 9;
+              z-index: 101;
             }
 
             .small_cross{
