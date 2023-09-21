@@ -218,6 +218,8 @@
               padding: 0;
               cursor: pointer;
               z-index: 7;
+              transition: ease 0.2s;
+
             }
 
             /* Sun Moon Icon */
@@ -231,6 +233,7 @@
               padding: 0;
               cursor: pointer;
               z-index: 7;
+              transition: ease 0.2s;
             }
  
                           /* ==================================================== */

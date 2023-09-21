@@ -93,7 +93,7 @@
 
   /* Sun Moon Icon */
   .sun {
-    display: block;
+    display: none;
     position: absolute;
     top: 26px;
     left: 70%;
@@ -103,7 +103,7 @@
 
   /* Sun Moon Icon */
   .sun.active {
-    display: block;
+    display: none;
     position: absolute;
     top: 30px;
     left: 72%;
@@ -175,6 +175,23 @@
     text-decoration: none !important;
     font-size: 0.7rem;
   }
+
+  #active_wrapper{
+    display: block;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    top: 0%;
+    left: 0%;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 360px;
+    justify-self: flex-end;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
 
   .thePassion_Active {
     display: none;

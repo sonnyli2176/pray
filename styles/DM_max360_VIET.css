@@ -94,7 +94,7 @@
 
             /* Sun Moon Icon */
             .sun {
-              display: block;
+              display: none;
               position: absolute;
               top: 2px;
               left: 75%;
@@ -107,7 +107,7 @@
 
             /* Sun Moon Icon */
             .sun.active {
-              display: block;
+              display: none;
               position: absolute;
               top: 2px;
               left: 75%;
@@ -390,13 +390,12 @@
 
             .menu-ul {
               position: relative;
-              top: -50px;
               display: flex;
               flex-direction: column;
               list-style: none;
               transition: all 0.3s ease-in-out;
               z-index: 5;
-              top: 120px;
+              top: 150px;
 
             }
 

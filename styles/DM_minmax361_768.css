@@ -91,7 +91,7 @@
 
             /* Sun Moon Icon */
             .sun {
-              display: block;
+              display: none;
               position: absolute;
               top: 2px;
               left: 75%;
@@ -104,7 +104,7 @@
 
             /* Sun Moon Icon */
             .sun.active {
-              display: block;
+              display: none;
               position: absolute;
               top: 2px;
               left: 75%;
@@ -183,11 +183,11 @@
                     font-size: 0.7rem;
                   }
                  
-  .thePassion_Active {
+    .thePassion_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -202,8 +202,8 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -217,8 +217,8 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -120px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -232,8 +232,8 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -120px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -248,8 +248,8 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -264,8 +264,8 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 180px;
+    top: 235px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -276,6 +276,7 @@
     transition: all 0.7s ease;
     z-index: 1;
   }
+
 
               #main_text_content{
               position: relative;
@@ -398,7 +399,7 @@
 
             .menu-ul {
               position: relative;
-              top: -50px;
+              top: -30px;
               display: flex;
               flex-direction: column;
               list-style: none;
