@@ -197,8 +197,8 @@ body{
                        position: relative;
                        grid-column: 2/3;
                        grid-row: 4/5;
-                       top: -100%;
-                       left: 64%;
+                       top: 0;
+                       left: 0;
                        border-radius: 5px;
                        padding: 8px 10px;
                        text-align: center;

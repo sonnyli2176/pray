@@ -179,8 +179,8 @@
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 310px;
+    left: -95px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -195,8 +195,8 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 310px;
+    left: -95px;;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -210,8 +210,8 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 70px;
+    top: 310px;
+    left: -95px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -225,8 +225,8 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 70px;
+    top: 310px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -241,8 +241,8 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 310px;
+    left: -95px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -257,13 +257,13 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 310px;
+    left: -105px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
     min-width: 200px;
-    max-width: 230px;
+    max-width: 220px;
     justify-self: flex-end;
     background-color: black;
     transition: all 0.7s ease;

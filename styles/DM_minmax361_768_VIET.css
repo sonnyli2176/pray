@@ -173,11 +173,11 @@
                     font-size: 0.7rem;
                   }
                  
-  .thePassion_Active {
+    .thePassion_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 235px;
+    left: -110px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -192,8 +192,8 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 235px;
+    left: -120px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -207,8 +207,8 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 70px;
+    top: 235px;
+    left: -120px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -222,8 +222,8 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 70px;
+    top: 235px;
+    left: -120px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -238,8 +238,8 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 235px;
+    left: -125px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -254,8 +254,8 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: 500px;
-    left: 80px;
+    top: 235px;
+    left: -125px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
