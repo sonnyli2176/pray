@@ -790,7 +790,7 @@ if (gloriousBtn.addEventListener('click', () => {
     mystery[0].classList.add("active");
   }));
 
-  // NEXT BUTTON
+  // NEXT BUTTON..
   nextBtn.addEventListener("click", function () {
     incrementCount();
     if (beads === 51) {

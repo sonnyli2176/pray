@@ -47,7 +47,6 @@ if (darkModeStorage === "on") {
     disableDark();
 }
 
-
   sun.addEventListener("click", () => {
     darkModeStorage = localStorage.getItem("darkMode");
     if (darkModeStorage !== "on") {
