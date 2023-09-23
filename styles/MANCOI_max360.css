@@ -498,7 +498,7 @@
                   transition: ease 0.7s;
                   z-index: -2;
                 }
-                .bg.dark{
+                .bg{
                   top: 60px;
                   opacity: 1;
                   position: absolute;

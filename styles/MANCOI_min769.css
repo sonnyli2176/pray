@@ -2,27 +2,25 @@
 /* _________________ END OF MAXpx ________________ */
           @media screen and (min-width: 769px){
           
-                .gridContent {
-                    display: grid;
-                    top: 180px;
-                    margin: 0px auto 0;
-                    min-width: 100%;
-                    height: 100dvh;
-                    position: absolute;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center center;
-                    justify-content: center center;
-                    grid-template-columns: 1fr 720px 1fr;
-                    grid-template-rows: 60px 260dvh auto;
-                    grid-template-areas:
-                      ". title ."
-                      "ls content rs"
-                      "ls footer rs";
-                    z-index: 0;
-                  }
-
-
+            .gridContent {
+                display: grid;
+                top: 180px;
+                margin: 0px auto 0;
+                min-width: 100%;
+                height: 100dvh;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                justify-content: center center;
+                grid-template-columns: 1fr 720px 1fr;
+                grid-template-rows: 60px 260dvh auto;
+                grid-template-areas:
+                  ". title ."
+                  "ls content rs"
+                  "ls footer rs";
+                z-index: 0;
+              }
 
               #bunches{
                 display: block;
@@ -34,7 +32,7 @@
                 left: 35%;
                 transition: all 3s ease;
                 animation: bunches 3s ease-in-out 0 1 forwards both;
-                z-index: 10;
+                z-index: 100;
               }
               #bunches.active{
                 display: block;
@@ -45,7 +43,7 @@
                 bottom: 92%;
                 left: 35%;
                 transition: all 3s ease;
-                z-index: 10;
+                z-index: 100;
               }
               #roses{
                 display: block;
@@ -57,7 +55,7 @@
                 left: 40%;
                 transition: all 3s ease;
                 animation: send_rose 3s ease-in-out 0 1 forwards both;
-                z-index: 10;
+                z-index: 100;
               }
               #roses.active{
                 display: block;
@@ -68,22 +66,22 @@
                 bottom: 97%;
                 left: 40%;
                 transition: all 3s ease;
-                z-index: 10;
+                z-index: 100;
               }
               
-                    #HolyRosary{
-                      position: absolute;
-                      top: -5px;
-                      left: -730px;
-                      margin: 0;
-                      height: 780px;
-                      z-index: 9;
-                      transform: scale(1.5);
-                    }
-                 
-                .home{
-                    display: none;
-                  }
+              #HolyRosary{
+                position: absolute;
+                top: -5px;
+                left: -730px;
+                margin: 0;
+                height: 780px;
+                z-index: 9;
+                transform: scale(1.5);
+              }
+            
+            .home{
+                display: none;
+              }
 
              .home_icon{
               position: relative;
@@ -135,9 +133,7 @@
                       z-index: 7;
                       width:25px;
                     }
-                    
-                    
-                         
+                                                                 
                    nav {
                       display: flex;
                       width: 100%;
@@ -150,8 +146,7 @@
                       justify-content: space-between;
                       z-index: 1;
                     }
-              
-              
+                            
                     .menu-ul {
                       display: flex;
                       flex-direction: row;
@@ -161,7 +156,6 @@
                       justify-content: right;
                       right: 37%;
                     }
-
             
                     .menu-ul li a {
                       padding-left: 3rem;
@@ -211,7 +205,6 @@ a,
   width: 600px;
   left: 50px;
 }
-
 
             #Mysteries_Container{
             grid-area: content;
@@ -293,7 +286,7 @@ a,
                   );
                   z-index: -2;
                 }
-                .bg.dark{
+                .bg{
                   top: 20px;
                   opacity: 1;
                   position: absolute;
@@ -739,7 +732,7 @@ a,
         .Transfiguration{
           display: block;
           position: absolute;
-          margin-top: 0em;
+          margin-top: 1em;
         }
         .The__Transfiguration{
           position: absolute;
@@ -825,13 +818,14 @@ a,
         .theAssumption{
           display: block;
           position: absolute;
-          margin-top: 1em;
+          margin-top: 0em;
         }
-
-        .mystery .theAssumption{
-          top: 5.5em;
+        .theAssumption_image{
+          display: block;
+          position: absolute;
+          margin-top: -2em;
         }
-  
+         
         .QueenofHeaven{
           position: absolute;
           margin-top: 1em;

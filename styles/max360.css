@@ -68,7 +68,7 @@
                 left: 50px;
                 transition: all 3s ease;
                 animation: bunches 3s ease-in-out 0 1 forwards both;
-                z-index: 10;
+                z-index: 100;
               }
               #bunches.active{
                 display: block;
@@ -79,7 +79,7 @@
                 bottom: 93%;
                 left: 50px;
                 transition: all 3s ease;
-                z-index: 10;
+                z-index: 100;
               }
               #roses{
               display: block;
@@ -91,7 +91,7 @@
                 left: 80px;
                 transition: all 3s ease;
                 animation: send_rose 3s ease-in-out 0 1 forwards both;
-                z-index: 10;
+                z-index: 100;
               }
 
               #roses.active{
@@ -103,7 +103,7 @@
                 bottom: 98%;
                 left: 80px;
                 transition: all 3s ease;
-                z-index: 10;
+                z-index: 100;
               }
 
 
@@ -258,7 +258,7 @@
               top: 138px;
               width: 360px;
               height: 470vh;
-              /* overflow: hidden; */
+              overflow: hidden;
               z-index: -1;
             }
             
@@ -268,7 +268,7 @@
               top: 138px;
               width: 360px;
               height: 470vh;
-              /* overflow: hidden; */
+              overflow: hidden;
               z-index: -1;
             }
 

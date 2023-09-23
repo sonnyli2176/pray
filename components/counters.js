@@ -23,6 +23,10 @@ import {
   fifth7, fifth8, fifth9, fifth10
 } from "./holyRosaries.js"
 
+
+let mystery = [];
+let mysteryOrigin = mystery.slice();
+
 // --------------------------------------------------
 function theHolyRosaryActive() {
   holyRosary.classList.toggle("active");
@@ -117,7 +121,7 @@ function sendRose() {
 function fadeOutRose() {
   setTimeout(() => {
     redRose.classList.remove('active');
-    }, 15000);
+    }, 5000);
 clearTimeout(fadeOutRose)
 }
 
@@ -134,7 +138,7 @@ function bunchRemove() {
   const bunches = document.getElementById("bunches");
       setTimeout(() => {
         bunches.classList.remove("active");
-      }, 30000);
+      }, 5000);
   clearTimeout(bunches);
 };
 
@@ -178,8 +182,6 @@ export function updateDisplay() {
   rosariesDisplay.innerText = rosaries;
 }
 
-let mystery = [];
-let mysteryOrigin = mystery.slice();
 
 let AllButtons = [joyfulBtn, lightBtn, sorrowfulBtn, gloriousBtn];
 let InActivities = 180000;
@@ -188,6 +190,7 @@ function closeContainer() {
   counterContainer.classList.remove("active");
 }
 
+//  PLAY MOUSE CLICK 
 const buttons = document.querySelectorAll('button');
 const audio = new Audio('./sound/click.mp3');
 buttons.forEach(button => {
@@ -297,25 +300,29 @@ function updateMysteries() {
    
 
 joyfulBtn.addEventListener("click", () => {
-  mystery.length = 0;
+  mystery = [];
+  // mystery.length = 0;
   joyActive.getJoyActive(mysteryOrigin);
      runningBeadsOnce();
 });
 
 lightBtn.addEventListener("click", () => {
-  mystery.length = 0;
+  mystery = [];
+  // mystery.length = 0;
   lightActive.getLightActive(mysteryOrigin);
   runningBeadsOnce();
 });
 
 sorrowfulBtn.addEventListener("click", () => {
-  mystery.length = 0;
+  mystery = [];
+  // mystery.length = 0;
   sorrowActive.getSorrowActive(mysteryOrigin);
   runningBeadsOnce();
 });
 
 gloriousBtn.addEventListener("click", () => {
-  mystery.length = 0;
+  mystery = [];
+  // mystery.length = 0;
   gloriousActive.getGloriousActive(mysteryOrigin);
   runningBeadsOnce();
 });
@@ -409,7 +416,6 @@ export function incrementCount() {
     sendRose();
     getRandomRoses();
     fadeOutRose()
-    updateMysteries()
     updateDisplay();
 
     setTimeout(() => {
@@ -488,7 +494,6 @@ export function incrementCount() {
         mystery[2].classList.add("active");
       }, 5000);
     }, 3000);
-    updateMysteries();
     updateDisplay();
     
   }
@@ -560,7 +565,6 @@ export function incrementCount() {
         mystery[3].classList.add("active");
       }, 5000);
     }, 3000);
-    updateMysteries();
     updateDisplay();
   }
 
@@ -631,7 +635,6 @@ export function incrementCount() {
         mystery[4].classList.add("active");
       }, 5000);
     }, 3000);
-    updateMysteries();
     updateDisplay();
   }
 
@@ -728,7 +731,7 @@ export function incrementCount() {
         });
 
         fire(0.5, {
-          spread: 120,
+          spread: 320,
           decay: 0.2,
           scalar: 0.5,
         });
@@ -761,22 +764,30 @@ export function incrementCount() {
     localStorage.setItem("decadesStored", decades);
     localStorage.setItem("rosariesStored", rosaries);
   }
-
-  if (joyfulBtn.addEventListener('click', () => {
+        
+if (joyfulBtn.addEventListener('click', () => {
+          lightActive.DeactivateLight();
+          sorrowActive.DeactivateSorrow();
+          gloriousActive.DeactivateGlorious();
     mystery[0].classList.add("active");
-    updateMysteries();
   }));
-  if (lightBtn.addEventListener('click', () => {
+if (lightBtn.addEventListener('click', () => {
+            joyActive.DeactivateActiveJoy();
+            sorrowActive.DeactivateSorrow();
+            gloriousActive.DeactivateGlorious;
     mystery[0].classList.add("active");
-    updateMysteries();
   }));
-  if (sorrowfulBtn.addEventListener('click', () => {
+if (sorrowfulBtn.addEventListener('click', () => {
+            lightActive.DeactivateLight();
+            joyActive.DeactivateActiveJoy();
+            gloriousActive.DeactivateGlorious();
     mystery[0].classList.add("active");
-    updateMysteries();
   }));
-  if (gloriousBtn.addEventListener('click', () => {
+if (gloriousBtn.addEventListener('click', () => {
+            lightActive.DeactivateLight();
+            joyActive.DeactivateActiveJoy();
+            sorrowActive.DeactivateSorrow();
     mystery[0].classList.add("active");
-    updateMysteries();
   }));
 
   // NEXT BUTTON
@@ -812,7 +823,6 @@ export function incrementCount() {
     sorrowActive.DeactivateSorrow();
     gloriousActive.DeactivateGlorious();
     ResetBeads();
-    updateMysteries();
     fadeOutRose();
     bunchRemove();
     updateDisplay();

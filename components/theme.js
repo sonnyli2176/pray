@@ -5,10 +5,8 @@ const textLight = document.querySelector(".textLight");
 const textDark = document.querySelector(".textDark");
 let sun = document.querySelector(".sun");
 const title = document.querySelector('.title');
-const mysteryBackground = document.querySelector('.bg');
 
 // STORAGE ELEMENTS
-let bgMystery = localStorage.getItem('bg')
 let darkModeStorage = localStorage.getItem("darkMode");
 let sunStorage = localStorage.getItem("sunDark");
 let textMode = localStorage.getItem("textDark");
@@ -128,23 +126,3 @@ titleChange === 'on' ? titleDark() : titleLight();
       titleChange = localStorage.getItem("titleDark");
       titleChange !== "on" ? titleDark() : titleLight();
     });
-
-      
-// BG ............................................................
-function bg() {
-  if (mysteryBackground) {
-    mysteryBackground.classList.remove('dark');
-    localStorage.setItem('bg', 'off');
-  }
-}
-function bgDark() {
-  if (mysteryBackground) {
-    mysteryBackground.classList.add('bg.dark');
-    localStorage.setItem('bg', 'on');
-  }
-}
-if (bgMystery === 'on' ? bgDark() : bg());
-sun.addEventListener('click', () => {
-  bgMystery = localStorage.getItem('bg');
-  bgMystery !== 'on' ? bgDark() : bg();
-})
