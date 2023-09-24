@@ -156,6 +156,7 @@
   }
 
   .fb {
+    display:none;
     position: absolute;
     top: 5px;
     left: 67%;
@@ -163,6 +164,13 @@
     z-index: 1;
     width: 27px;
   }
+
+                  .email{
+                grid-area: footer;
+                position: absolute;
+                bottom: -90%;
+                left: 230px;
+              }
 
   /* Sun Moon Icon */
   .sun {
@@ -1031,11 +1039,11 @@ color: var(--lightblue);
     transition: all 0.3s;
   }
 
-  .subheading{
+  /* .subheading{
   color: var(--rose);
 }
 .subheading.active{
   color: var(--subtitle);
-}
+} */
 }
 /* -------------------------------------------------------------- */

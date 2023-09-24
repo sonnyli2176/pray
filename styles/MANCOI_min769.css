@@ -126,6 +126,7 @@
                     }
 
                     .fb{
+                      display:none;
                       position: absolute;
                       top: -6px;
                       left: 64%;
@@ -133,7 +134,14 @@
                       z-index: 7;
                       width:25px;
                     }
-                                                                 
+                          
+                      .email{
+                      grid-area: footer;
+                      position: absolute;
+                      bottom: 0;
+                      left: 70px;
+                    }
+
                    nav {
                       display: flex;
                       width: 100%;
@@ -839,12 +847,12 @@ a,
             top: 6.5em;
           }
 
-          .subheading{
+          /* .subheading{
   color: var(--rose);
 }
 .subheading.active{
   color: var(--subtitle);
-}
+} */
 
 }
 

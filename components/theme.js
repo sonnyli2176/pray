@@ -5,6 +5,7 @@ const textLight = document.querySelector(".textLight");
 const textDark = document.querySelector(".textDark");
 let sun = document.querySelector(".sun");
 const title = document.querySelector('.title');
+const subHeadingChange = document.querySelector(".subheading");
 
 // STORAGE ELEMENTS
 let darkModeStorage = localStorage.getItem("darkMode");
@@ -12,6 +13,7 @@ let sunStorage = localStorage.getItem("sunDark");
 let textMode = localStorage.getItem("textDark");
 let titleChange = localStorage.getItem("titleDark");
 let titleStorage = localStorage.getItem("title");
+let subHeadingStorage = localStorage.getItem("subheading");
 
 // HAMBURGER MENU
         hamMenu.addEventListener("click", () => {
@@ -114,14 +116,36 @@ function titleDark() {
     localStorage.setItem('titleDark', 'on');
   }
 }
-if (titleChange === "on") {
-  titleDark();
-} else {
-  titleLight();
-}
+// if (titleChange === "on") {
+//   titleDark();
+// } else {
+//   titleLight();
+// }
 
 titleChange === 'on' ? titleDark() : titleLight();
     sun.addEventListener("click", () => {
       titleChange = localStorage.getItem("titleDark");
       titleChange !== "on" ? titleDark() : titleLight();
+    });
+
+
+// SUBHEADING new
+function subHeading() {
+  if (subHeadingChange) {
+    subHeadingChange.classList.remove("active");
+    localStorage.setItem("subheading", "off");
+  }
+}
+
+function subHeadingDark() {
+  if (subHeadingChange) {
+    subHeadingChange.classList.add('active');
+    localStorage.setItem('subheading', 'on');
+  }
+}
+
+subHeadingStorage === 'on' ? subHeadingDark() : subHeading();
+    sun.addEventListener("click", () => {
+      subHeadingStorage = localStorage.getItem("subheading");
+      subHeadingStorage !== "on" ? subHeadingDark() : subHeading();
     });

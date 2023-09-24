@@ -1,30 +1,29 @@
 
           
 /* _________________ END OF MAXpx ________________ */
-          @media screen and (min-width: 769px){
-          
-                .gridContent {
-                    display: grid;
-                    top: 180px;
-                    margin: 0px auto 0;
-                    min-width: 100%;
-                    height: 100dvh;
-                    position: absolute;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center center;
-                    justify-content: center center;
-                    grid-template-columns: 1fr 720px 1fr;
-                    grid-template-rows: 60px 260dvh auto;
-                    grid-template-areas:
-                      ". title ."
-                      "ls content rs"
-                      "ls footer rs";
-                      }
+@media screen and (min-width: 769px){
+              .gridContent {
+              display: grid;
+              top: 180px;
+              margin: 0px auto 0;
+              min-width: 100%;
+              height: 100dvh;
+              position: absolute;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              justify-content: center center;
+              grid-template-columns: 1fr 720px 1fr;
+              grid-template-rows: 60px 260dvh auto;
+              grid-template-areas:
+                ". title ."
+                "ls content rs"
+                "ls footer rs";
+                }
 
-                  .home{
-                    display: none;
-                  }
+            .home{
+              display: none;
+            }
 
            .home_icon{
               position: relative;
@@ -128,7 +127,15 @@
                       z-index: 7;
                     }
 
+                    .email{
+                      grid-area: footer;
+                      position: absolute;
+                      bottom: 0;
+                      left: 70px;
+                    }
+
                     .fb{
+                      display:none;
                       position: absolute;
                       top: -6px;
                       left: 64%;
@@ -940,12 +947,12 @@ a {
           margin-top: 5em;
         }
 
-    .subheading{
+    /* .subheading{
   color: var(--rose);
 }
 .subheading.active{
   color: var(--subtitle);
-}
+} */
   }
 
 

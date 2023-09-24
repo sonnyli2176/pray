@@ -199,7 +199,15 @@
                 z-index: 1;
                }
 
+                .email{
+                grid-area: footer;
+                position: absolute;
+                bottom: -90%;
+                left: 230px;
+              }
+
               .fb{
+                display:none;
                 position: absolute;
                 top: 5px;
                 left: 67%;
@@ -1042,11 +1050,11 @@
             }
           
 /* -------------------------------------------------------------- */
-.subheading{
+/* .subheading{
   color: var(--rose);
 }
 .subheading.active{
   color: var(--subtitle);
-}
+} */
 
 }

@@ -149,12 +149,20 @@
                }
 
               .fb{
+                display:none;
                 position: absolute;
                 top: 5px;
                 left: 67%;
                 cursor: pointer;
                 z-index: 1;
                 width: 27px;
+              }
+
+                .email{
+                grid-area: footer;
+                position: absolute;
+                bottom: -90%;
+                left: 230px;
               }
 
             .home_icon{
@@ -1038,11 +1046,11 @@
             }
           
 /* -------------------------------------------------------------- */
-.subheading{
+/* .subheading{
   color: var(--rose);
 }
 .subheading.active{
   color: var(--subtitle);
-}
+} */
 
 }
