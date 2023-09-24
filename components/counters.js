@@ -86,9 +86,7 @@ const rosesArray = [
   "purple.png",
   "red.png",
   "white.png",
-  "yellow.png",
-  "lily.png",
-  "yellowlily.png"
+  "yellow.png"
 ];
 
 function getRandomRoses() {
