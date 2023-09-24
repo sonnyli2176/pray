@@ -770,8 +770,8 @@ export function incrementCount() {
       theRosaryStringRemove();
       theHolyRosaryRemove();
       runningBeadsRemove();
-    }, 3000)
-  };
+    }, 5000)
+  }
     localStorage.setItem("beadsStored", beads);
     localStorage.setItem("decadesStored", decades);
     localStorage.setItem("rosariesStored", rosaries);
@@ -823,7 +823,7 @@ if (gloriousBtn.addEventListener('click', () => {
         bunchRemove();
         ResetBeads();
         updateDisplay();
-      }, 15000);
+      }, 4000);
     }
   });
 
