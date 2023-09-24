@@ -790,14 +790,14 @@ if (lightBtn.addEventListener('click', () => {
     mystery[0].classList.add("active");
   }));
 if (sorrowfulBtn.addEventListener('click', () => {
-            lightActive.DeactivateLight();
             joyActive.DeactivateActiveJoy();
+            lightActive.DeactivateLight();
             gloriousActive.DeactivateGlorious();
     mystery[0].classList.add("active");
   }));
 if (gloriousBtn.addEventListener('click', () => {
-            lightActive.DeactivateLight();
             joyActive.DeactivateActiveJoy();
+            lightActive.DeactivateLight();
             sorrowActive.DeactivateSorrow();
     mystery[0].classList.add("active");
   }));
