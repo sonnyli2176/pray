@@ -1,6 +1,6 @@
 import {
   RosaryBeadsAllClasses, RosaryString, holyRosary, crucifix, firstBigDecade, secondBigDecade, thirdBigDecade,
-fourthBigDecade,fifthBigDecade,apostleCreed,gloryBe} from "./holyRosaries.js";
+fourthBigDecade,fifthBigDecade,FirstHailMary, SecondHailMary, ThirdHailMary, apostleCreed,gloryBe} from "./holyRosaries.js";
 import {
   first1, first2, first3, first4, first5, first6,
 first7,first8,first9,first10} from "./holyRosaries.js";
@@ -28,6 +28,19 @@ let mystery = [];
 let mysteryOrigin = mystery.slice();
 
 // --------------------------------------------------
+
+
+function FirstHailMaryActive() {
+  FirstHailMary.classList.toggle("active");
+}
+function SecondHailMaryActive() {
+  SecondHailMary.classList.toggle("active");
+}
+function ThirdHailMaryActive() {
+  ThirdHailMary.classList.toggle("active");
+}
+
+
 function theHolyRosaryActive() {
   holyRosary.classList.toggle("active");
 }
@@ -121,7 +134,7 @@ function sendRose() {
 function fadeOutRose() {
   setTimeout(() => {
     redRose.classList.remove('active');
-    }, 5000);
+    }, 15000);
 clearTimeout(fadeOutRose)
 }
 
@@ -138,7 +151,7 @@ function bunchRemove() {
   const bunches = document.getElementById("bunches");
       setTimeout(() => {
         bunches.classList.remove("active");
-      }, 5000);
+      }, 15000);
   clearTimeout(bunches);
 };
 
@@ -753,7 +766,6 @@ export function incrementCount() {
     setTimeout(() => {
       sendBunch();
       getRandomBunch();
-      bunchRemove();
       theHolyCrucifixRemove();
       theRosaryStringRemove();
       theHolyRosaryRemove();
@@ -808,6 +820,7 @@ if (gloriousBtn.addEventListener('click', () => {
         mystery[0].classList.remove("active");
         beads = 0;
         decades = 0;
+        bunchRemove();
         ResetBeads();
         updateDisplay();
       }, 15000);

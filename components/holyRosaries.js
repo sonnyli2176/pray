@@ -3,6 +3,9 @@
     import { updateDisplay, incrementCount } from "./counters.js";
 
 
+    export const FirstHailMary = document.getElementById('FirstHailMary');
+    export const SecondHailMary = document.getElementById('SecondHailMary');
+    export const ThirdHailMary = document.getElementById('ThirdHailMary');
     export const holyRosary = document.getElementById('HolyRosary');
     export const crucifix = document.getElementById("Crucifix");
     export const RosaryString = document.getElementById("RosaryString");

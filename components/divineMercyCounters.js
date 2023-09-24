@@ -440,11 +440,11 @@ function incrementCount() {
 
       setTimeout(() => {
       removeActivetheHolyGod();
-      // ResetBeads();
+      ResetBeads();
       resetCounters();
       // removeChapletsCounters();
       updateDisplay();
-    }, 18000);
+    }, 10000);
 
     localStorage.setItem("beadsStored", beads);
     localStorage.setItem("decadesStored", decades);
