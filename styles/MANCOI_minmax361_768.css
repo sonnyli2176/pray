@@ -149,7 +149,7 @@
     position: relative;
     width: 25px;
     top: 12px;
-    left: 79%;
+    left: 75%;
     right: 20%;
     cursor: pointer;
     z-index: 1;
@@ -177,7 +177,7 @@
     display: block;
     position: absolute;
     top: 5px;
-    left: 53%;
+    left: 58%;
     right: 23%;
     margin: 0;
     padding: 0;
@@ -190,7 +190,7 @@
     display: block;
     position: absolute;
     top: 5px;
-    left: 53%;
+    left: 58%;
     right: 23%;
     margin: 0;
     padding: 0;
