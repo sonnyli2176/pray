@@ -188,7 +188,6 @@
 .heart,
 .comment,
 .clickLink {
-  color: var(--rose);
   font-weight: 700;
   width: 600px;
 }

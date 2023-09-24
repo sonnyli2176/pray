@@ -37,7 +37,6 @@
             .heart,
             .comment,
             .clickLink {
-              color: var(--rose);
               font-weight: 700;
               left: -10px;
               text-align: center;

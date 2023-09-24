@@ -116,11 +116,6 @@ function titleDark() {
     localStorage.setItem('titleDark', 'on');
   }
 }
-// if (titleChange === "on") {
-//   titleDark();
-// } else {
-//   titleLight();
-// }
 
 titleChange === 'on' ? titleDark() : titleLight();
     sun.addEventListener("click", () => {
@@ -139,7 +134,7 @@ function subHeading() {
 
 function subHeadingDark() {
   if (subHeadingChange) {
-    subHeadingChange.classList.add('active');
+    subHeadingChange.classList.toggle('active');
     localStorage.setItem('subheading', 'on');
   }
 }
