@@ -126,21 +126,17 @@ titleChange === 'on' ? titleDark() : titleLight();
 
 // SUBHEADING new
 function subHeading() {
-  if (subHeadingChange) {
     subHeadingChange.classList.remove("active");
     localStorage.setItem("subheading", "off");
   }
-}
 
 function subHeadingDark() {
-  if (subHeadingChange) {
-    subHeadingChange.classList.toggle('active');
+    subHeadingChange.classList.add('active');
     localStorage.setItem('subheading', 'on');
-  }
 }
 
 subHeadingStorage === 'on' ? subHeadingDark() : subHeading();
     sun.addEventListener("click", () => {
-      subHeadingStorage = localStorage.getItem("subheading");
-      subHeadingStorage !== "on" ? subHeadingDark() : subHeading();
+    subHeadingStorage = localStorage.getItem("subheading");
+    subHeadingStorage !== "on" ? subHeadingDark() : subHeading();
     });
