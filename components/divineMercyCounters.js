@@ -159,6 +159,7 @@ divineMercyBtn.addEventListener('click', () => {
   counterContainer.classList.toggle("active");
   chapletDivineMercy.classList.toggle("active");
   theEternalFather_Active.classList.toggle("active");
+  resetCounters()
   updateDisplay();
 });
 
@@ -199,30 +200,32 @@ function resetPrayers() {
     }
   }
 
-function resetEternalPassion() {
-  theEternalFather_Active.classList.remove("active");
-  thePassion_Active.classList.remove("active");
-  theHolyGod_Active.classList.remove("active");
+  function resetEternalPassion() {
+    theEternalFather_Active.classList.remove("active");
+    thePassion_Active.classList.remove("active");
+    theHolyGod_Active.classList.remove("active");
 }
   
-function removeEternalFatherPrayer() {
-  theEternalFather_Active.classList.remove("active");
-}
-function reactivateTheEternalFather() {
+  function PassionPrayers() {
+    thePassion_Active.classList.add("active");
+  }
+
+  function removePassionPrayers() {
+      thePassion_Active.classList.remove("active");
+  }
+
+function EternalFather() {
   theEternalFather_Active.classList.add("active");
 }
-  
-function reactivatePassionPrayers() {
-  thePassion_Active.classList.add("active");
+function deleteEternalPrayer() {
+    theEternalFather_Active.classList.remove("active");
 }
-function removeThePassionPrayers() {
-  thePassion_Active.classList.remove("active");
-}
+
 function activetheHolyGod() {
   theHolyGod_Active.classList.add("active");
 }
-function removeActivetheHolyGod() {
-  theHolyGod_Active.classList.remove("active");
+function removeHolyGod() {
+    theHolyGod_Active.classList.remove("active");
 }
 
 // Increment count
@@ -235,12 +238,19 @@ function incrementCount() {
       chaplets++;
     }
   }
-  
+  if (beads === 0) {
+      removePassionPrayers()
+    }
   if (beads === 1) {
     first1.setAttribute("fill", "rgb(58, 10, 10)");
-      removeEternalFatherPrayer();
-      reactivatePassionPrayers();
-     }
+          deleteEternalPrayer();
+          PassionPrayers();     
+  } else {
+    nextBtn.addEventListener('click', () => {
+      deleteEternalPrayer();
+    })
+  }
+  
   if (beads === 2) {
     first2.setAttribute("fill", "rgb(58, 10, 10)");
   }
@@ -266,25 +276,28 @@ function incrementCount() {
     first9.setAttribute("fill", "rgb(58, 10, 10)");
   }
   if (beads === 10) {
-      
     first10.setAttribute("fill", "rgb(58, 10, 10)");
-      setTimeout(() => {
-        firstBigDecade.setAttribute("fill", "#a812ff");
-      }, 3000);
-      removeThePassionPrayers();
-      reactivateTheEternalFather();
-      updateDisplay();
-   }
+    updateDisplay();
+    setTimeout(() => {
+      firstBigDecade.setAttribute("fill", "#a812ff");
+      removePassionPrayers();
+      EternalFather();
+    }, 3000);
+    
+    setTimeout(() => {
+      deleteEternalPrayer();
+     PassionPrayers();
+  }, 15000);
+  }
 
-
+  
+  
   // Second Decades Count Change colours
   if (beads === 11) {
-    removeEternalFatherPrayer();
-    reactivatePassionPrayers();
-    second1.setAttribute("fill", "rgb(58, 10, 10)");
-  }
+     second1.setAttribute("fill", "rgb(58, 10, 10)");
+    }
     if (beads === 12) {
-    second2.setAttribute("fill", "rgb(58, 10, 10)");
+      second2.setAttribute("fill", "rgb(58, 10, 10)");
   }
   if (beads === 13) {
     second3.setAttribute("fill", "rgb(58, 10, 10)");
@@ -309,19 +322,22 @@ function incrementCount() {
   }
   if (beads === 20) {
     second10.setAttribute("fill", "rgb(58, 10, 10)");
+    updateDisplay();
         setTimeout(() => {
           secondBigDecade.setAttribute("fill", "#a812ff");
+                removePassionPrayers();
+                EternalFather();
         }, 3000);
-      removeThePassionPrayers();
-      reactivateTheEternalFather();
-      updateDisplay();
+
+    setTimeout(() => {
+      deleteEternalPrayer();
+      PassionPrayers();
+    }, 15000);
   }
   
   // THIRD DECADES
   if (beads === 21) {
     third1.setAttribute("fill", "rgb(58, 10, 10)");
-    removeEternalFatherPrayer();
-    reactivatePassionPrayers();
   }
   if (beads === 22) {
     third2.setAttribute("fill", "rgb(58, 10, 10)");
@@ -349,19 +365,22 @@ function incrementCount() {
   }
   if (beads === 30) {
     third10.setAttribute("fill", "rgb(58, 10, 10)");
+    updateDisplay();
         setTimeout(() => {
           thirdBigDecade.setAttribute("fill", "#a812ff");
+                removePassionPrayers();
+                EternalFather();
         }, 3000);
-  removeThePassionPrayers();
-  reactivateTheEternalFather();
-  updateDisplay();
+    
+    setTimeout(() => {
+      deleteEternalPrayer();
+      PassionPrayers();
+    }, 15000);
   }
 
   // FOURTH DECADES
   if (beads === 31) {
     fourth1.setAttribute("fill", "rgb(58, 10, 10)");
-        removeEternalFatherPrayer();
-        reactivatePassionPrayers();
   }
   if (beads === 32) {
     fourth2.setAttribute("fill", "rgb(58, 10, 10)");
@@ -389,20 +408,22 @@ function incrementCount() {
   }
   if (beads === 40) {
     fourth10.setAttribute("fill", "rgb(58, 10, 10)");
+    updateDisplay();
         setTimeout(() => {
           fourthBigDecade.setAttribute("fill", "#a812ff");
-           }, 3000);
-   removeThePassionPrayers();
-   reactivateTheEternalFather();
-   updateDisplay();
-
+            removePassionPrayers();
+            EternalFather();
+        }, 3000);
+    
+    setTimeout(() => {
+      deleteEternalPrayer();
+      PassionPrayers();
+    }, 15000);
   }
 
   // FIFTH DECADES
   if (beads === 41) {
     fifth1.setAttribute("fill", "rgb(58, 10, 10)");
-            removeEternalFatherPrayer();
-            reactivatePassionPrayers();
   }
   if (beads === 42) {
     fifth2.setAttribute("fill", "rgb(58, 10, 10)");
@@ -430,21 +451,20 @@ function incrementCount() {
   }
   if (beads === 50) {
     fifth10.setAttribute("fill", "rgb(58, 10, 10)");
-        removeEternalFatherPrayer();
-        removeThePassionPrayers();
-        activetheHolyGod();
-    
     setTimeout(() => {
       fifthBigDecade.setAttribute("fill", "#a812ff");
+                  removePassionPrayers();
+                  activetheHolyGod();
+    
     }, 3000);
 
-      setTimeout(() => {
-      removeActivetheHolyGod();
-      ResetBeads();
-      resetCounters();
-      // removeChapletsCounters();
-      updateDisplay();
-    }, 10000);
+    setTimeout(() => {
+        removePassionPrayers();
+        removeHolyGod();
+        ResetBeads();
+        resetCounters();
+        updateDisplay();
+    }, 15000);
 
     localStorage.setItem("beadsStored", beads);
     localStorage.setItem("decadesStored", decades);
