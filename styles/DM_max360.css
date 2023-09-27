@@ -19,6 +19,19 @@
     overflow-x: hidden;
     touch-action: pan-y;
   }
+
+             /* #canvasX{
+                    border: 2px solid white;
+                    position: absolute;
+                    bottom: -620%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 360px;
+                    height: 775px;
+                  } */
+
+
+
   /* ...............Actual Red Rose Sub-heading.................. */
   .make_sign,
   .trinity,
@@ -566,7 +579,7 @@
     font-size: large;
   }
 
-  #beads-plus:hover {
+  /* #beads-plus:hover {
     background-color: var(--divine_mercy_black);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
@@ -577,7 +590,7 @@
     color: var(--divine_mercy_red);
     transition: all 0.3s;
     box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  }
+  } */
 
   /* DIGITS */
   #decades {
@@ -657,17 +670,17 @@
     cursor: pointer;
   }
 
-  #reset-btn:hover {
+  /* #reset-btn:hover {
     background-color: var(--divine_mercy_black);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
-  }
+  } */
 
-  #reset-btn:active {
+  /* #reset-btn:active {
     background-color: var(--divine_mercy_black);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
     box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  }
+  } */
 }
 /* -------------------------------------------------------------- */

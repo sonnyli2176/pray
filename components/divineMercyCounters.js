@@ -122,38 +122,6 @@ buttons.forEach((button) => {
     audio.play();
   });
 });
-// links.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     audio.play();
-//   });
-// });
-
-// const browserMessage = document.getElementById("chromeBrowser");
-//  let ba = ['Chrome','Firefox','Safari','Opera','Edg' || 'Edge'];
-// let b, ua = navigator.userAgent;
-
-// for (let i = 0; i < ba.length; i++) {
-//   if (ua.indexOf(ba[i]) > -1) {
-//     b = ba[i];
-//     browserMessage.classList.add("active");
-//     return c(browserMessage);
-
-//   } if(b === 'Chrome') {
-//     return browserMessage.classList.remove("active");
-//   }
-// }
-
-// clearTimeout(ua);
-// ua = setTimeout(() => {
-//   browserMessage.classList.remove("active");
-// }, 6000);
-
-
-// divineMercyBtn.addEventListener("click", () => {
-    // counterContainer.classList.toggle("active");
-    // chapletDivineMercy.classList.toggle("active");
-//   theEternalFather_Active.classList.toggle("active");
-//   });
 
 divineMercyBtn.addEventListener('click', () => {
   counterContainer.classList.toggle("active");
@@ -163,13 +131,10 @@ divineMercyBtn.addEventListener('click', () => {
   updateDisplay();
 });
 
-
-
 function removeChapletsCounters() {
     counterContainer.classList.remove("active");
     chapletDivineMercy.classList.remove("active");
   }
-
 
 function resetPrayers() {
   if (
@@ -181,7 +146,6 @@ function resetPrayers() {
   })  
 );
 }
-
 
   // RESET BEADS COLOUR
   function ResetBeads() {
@@ -289,9 +253,7 @@ function incrementCount() {
      PassionPrayers();
   }, 15000);
   }
-
-  
-  
+    
   // Second Decades Count Change colours
   if (beads === 11) {
      second1.setAttribute("fill", "rgb(58, 10, 10)");
@@ -464,7 +426,7 @@ function incrementCount() {
         ResetBeads();
         resetCounters();
         updateDisplay();
-    }, 15000);
+    }, 20000);
 
     localStorage.setItem("beadsStored", beads);
     localStorage.setItem("decadesStored", decades);

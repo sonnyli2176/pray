@@ -51,7 +51,7 @@
                 position: absolute;
                 margin: 0;
                 padding: 0;
-                bottom:96%;
+                bottom:96.9%;
                 left: 40%;
                 transition: all 3s ease;
                 animation: send_rose 3s ease-in-out 0 1 forwards both;

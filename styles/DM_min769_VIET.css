@@ -196,7 +196,7 @@
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: -1200px;
+    top: -1390px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -212,7 +212,7 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: -1205px;
+    top: -1390px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -232,8 +232,8 @@
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
-    min-width: 200px;
-    max-width: 220px;
+    min-width: 220px;
+    max-width: 250px;
     justify-self: flex-end;
     background-color: black;
     transition: all 0.7s ease;
@@ -242,13 +242,13 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: -1300px;
+    top: -1390px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
-    min-width: 200px;
-    max-width: 220px;
+    min-width: 220px;
+    max-width: 250px;
     justify-self: flex-end;
     background-color: black;
     transition: all 0.7s ease;
@@ -258,7 +258,7 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: -1200px;
+    top: -1320px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -274,12 +274,12 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: -1205px;
+    top: -1320px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
-    min-width: 200px;
+    min-width: 220px;
     max-width: 230px;
     justify-self: flex-end;
     background-color: black;
@@ -545,19 +545,6 @@
     font-size: large;
   }
 
-  #beads-plus:hover {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-
-  #beads-plus:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  }
-
   /* DIGITS */
   #decades {
     position: absolute;
@@ -636,7 +623,7 @@
     cursor: pointer;
   }
 
-  #reset-btn:hover {
+  /* #reset-btn:hover {
     background-color: var(--divine_mercy_black);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
@@ -647,5 +634,5 @@
     color: var(--divine_mercy_red);
     transition: all 0.3s;
     box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  }
+  } */
 }
