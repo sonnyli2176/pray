@@ -129,8 +129,8 @@
               position: relative;
               grid-column: 2/3;
               grid-row: 4/5;
-              top: -175px;
-              left: 0px;
+              top: -170px;
+              left: -20px;
               width: 95px;
               height: fit-content;
               padding: 3px 7px;
