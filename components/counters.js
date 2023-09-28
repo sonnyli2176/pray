@@ -157,10 +157,7 @@ function bunchRemove() {
 // BUTTONS COUNT
  export const nextBtn = document.getElementById("beads-plus");
  export const resetBtn = document.getElementById("reset-btn");
- const mysteriesMessage = document.querySelector(".pop_up_msg");
- const counterContainer = document.querySelector(
-  "#counters-and-buttons-container"
-);
+ const counterContainer = document.querySelector("#counters-and-buttons-container");
 
 // CLASSES
  const joyfulClass = document.querySelectorAll(".joyful");
