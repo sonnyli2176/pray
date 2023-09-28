@@ -449,7 +449,7 @@ body{
 
   #beads-plus:hover
  {
-    background-color: var(--divine_mercy_black);
+    background-color: var(--darkModeText);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
   }
@@ -561,7 +561,7 @@ padding: 0 3px;
 
   #reset-btn:hover
  {
-    background-color: var(--divine_mercy_black);
+    background-color: var(--darkModeText);
     color: var(--divine_mercy_red);
     transition: all 0.3s;
   }

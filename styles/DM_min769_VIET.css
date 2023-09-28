@@ -37,8 +37,8 @@
     opacity: 0;
     grid-column: 2/3;
     grid-row: 3/4;
-    top: -100px;
-    left: 85%;
+    top: 120px;
+    left: 95%;
     margin: 0;
     padding: 0;
     z-index: 1;
@@ -50,7 +50,7 @@
     opacity: 1;
     grid-column: 2/3;
     grid-row: 3/4;
-    top: -100px;
+    top: 120px;
     left: 95%;
     margin: 0;
     padding: 0;
@@ -176,27 +176,10 @@
     font-size: 0.7rem;
   }
 
-  #active_wrapper{
-    display: block;
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    top: 0%;
-    left: 0%;
-    border-radius: 5px;
-    padding: 8px 10px;
-    text-align: center;
-    min-width: 180px;
-    max-width: 360px;
-    justify-self: flex-end;
-    transition: all 0.3s ease;
-    z-index: 2;
-}
-
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: -1390px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -212,7 +195,7 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: -1390px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -227,7 +210,7 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: -1300px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -242,8 +225,8 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: -1390px;
-    left: 230px;
+    top: -670px;
+    left: 200px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -258,7 +241,7 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: -1320px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -274,12 +257,12 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: -1320px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
-    min-width: 220px;
+    min-width: 200px;
     max-width: 230px;
     justify-self: flex-end;
     background-color: black;
@@ -472,7 +455,7 @@
     display: block;
     opacity: 0;
     position: relative;
-    top: -205%;
+    top: -120%;
     left: 480px;
     padding: 0;
     z-index: 9;
@@ -484,7 +467,7 @@
     opacity: 1;
     position: relative;
     padding: 0;
-    top: -200%;
+    top: -125%;
     left: 480px;
     z-index: 9;
     transition: all 2s ease;

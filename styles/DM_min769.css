@@ -40,8 +40,8 @@
               opacity: 0;
               grid-column: 2/3;
               grid-row: 3/4;
-              top: -100px;
-              left: 85%;
+              top: 120px;
+              left: 95%;
               margin: 0;
               padding: 0;
               z-index: 1;
@@ -53,7 +53,7 @@
               opacity: 1;
               grid-column: 2/3;
               grid-row: 3/4;
-              top: -100px;
+              top: 120px;
               left: 95%;
               margin: 0;
               padding: 0;
@@ -186,7 +186,7 @@
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: -1330px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -202,7 +202,7 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: -1330px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -217,7 +217,7 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: -1370px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -232,8 +232,8 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: -1370px;
-    left: 230px;
+    top: -670px;
+    left: 200px;
     border-radius: 5px;
     padding: 8px 10px;
     text-align: center;
@@ -248,7 +248,7 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: -1330px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -264,7 +264,7 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: -1330px;
+    top: -600px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -452,7 +452,7 @@
               display: block;
               opacity: 0;
               position: relative;
-              top: -185%;
+              top: -120%;
               left: 480px;
               padding: 0;
               z-index: 9;  
@@ -464,7 +464,7 @@
               opacity: 1;
               position: relative;
               padding: 0;              
-              top: -190%;
+              top: -125%;
               left: 480px;
               z-index: 9;     
               transition: all 2s ease;
@@ -526,19 +526,6 @@
               font-size: large;
             }
 
-        /* #beads-plus:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-  
-  #beads-plus:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
 
       /* DIGITS */
               #decades {
@@ -612,25 +599,13 @@
               order: 3;
               position: relative;
               left: 15px;
-              top: 270px;
+              top: 200px;
               background-color: var(--divine_mercy_dark_Red);
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);            
               cursor: pointer;
             }
 
-            /* #reset-btn:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-  
-  #reset-btn:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
+
 
 }
 
