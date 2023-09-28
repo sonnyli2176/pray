@@ -186,7 +186,7 @@
   .thePassion_Active {
     display: none;
     position: absolute;
-    top: -600px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -202,7 +202,7 @@
   .thePassion_Active.active {
     display: block;
     position: absolute;
-    top: -600px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -217,7 +217,7 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: -670px;
+    top: -700px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -232,7 +232,7 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: -670px;
+    top: -700px;
     left: 200px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -248,7 +248,7 @@
   .theHolyGod_Active {
     display: none;
     position: absolute;
-    top: -600px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -264,7 +264,7 @@
   .theHolyGod_Active.active {
     display: block;
     position: absolute;
-    top: -600px;
+    top: -670px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;

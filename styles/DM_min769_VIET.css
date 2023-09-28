@@ -606,16 +606,4 @@
     cursor: pointer;
   }
 
-  /* #reset-btn:hover {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-
-  #reset-btn:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
 }

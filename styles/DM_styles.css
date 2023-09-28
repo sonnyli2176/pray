@@ -243,6 +243,7 @@ body{
                           
                   .thePassion_Active.active{
                        display: block;
+                       color: var(--darkModeText);
                        position: absolute;
                        grid-column: 2/3;
                        grid-row: 4/5;
@@ -372,7 +373,7 @@ body{
 
                .subheading{
                 font-size: medium;
-                color:antiquewhite;
+                    color: var(--darkModeText);
                   }
 
                   .heart{
@@ -644,7 +645,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 0;
-  color: var(--divine_mercy_text_dark);
+  color: var(--darkModeText);
   margin: 0;
   padding: 0;
   box-sizing: border-box;

@@ -403,7 +403,7 @@
              .menu-ul li a {
               display: block;
               min-width: 100%;
-              color: var(--divine_mercy_text_dark);
+              color: var(--darkModeText);
               background-color:  var( --divine_mercy_dark_Red);
               left: 10px;
             }
@@ -490,9 +490,7 @@
             }
             /* End of Hamburger Nav */
 
-
-            
-       #counters-and-buttons-container{
+           #counters-and-buttons-container{
               display: block;
               opacity: 0;
               position: relative;
@@ -569,20 +567,6 @@
               font-weight: 900;
               font-size: large;
             }
-
-        /* #beads-plus:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-  
-  #beads-plus:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
 
       /* DIGITS */
               #decades {
@@ -661,20 +645,6 @@
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);            
               cursor: pointer;
             }
-
-            /* #reset-btn:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-  
-  #reset-btn:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
 
           }
 /* -------------------------------------------------------------- */

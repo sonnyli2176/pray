@@ -127,7 +127,7 @@
             }
             .titleDark {
               position: absolute;
-              color: var(--divine_mercy_text_dark);
+              color: var(--darkModeText);
               font-size: clamp(0.8rem, 2rem, 3.5rem);
               top: 50px;
               justify-self: center;
@@ -140,7 +140,7 @@
               grid-column: 2/3;
               grid-row: 4/5;
               top: -175px;
-              left: 0px;
+              left: -20px;
               width: 95px;
               height: fit-content;
               padding: 3px 7px;
@@ -580,20 +580,6 @@
               font-size: large;
             }
 
-        /* #beads-plus:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  }
-  
-  #beads-plus:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
-
       /* DIGITS */
               #decades {
               position: absolute;
@@ -671,19 +657,5 @@
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);            
               cursor: pointer;
             }
-/* 
-            #reset-btn:hover
- {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-  } */
-  
-  /* #reset-btn:active {
-    background-color: var(--divine_mercy_black);
-    color: var(--divine_mercy_red);
-    transition: all 0.3s;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  } */
 
 }

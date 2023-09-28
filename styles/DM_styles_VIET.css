@@ -557,8 +557,6 @@ padding: 0 3px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   }
 
-
-
   #reset-btn:hover
  {
     background-color: var(--darkModeText);
@@ -631,9 +629,6 @@ body {
   color: var(--faderose);
 }
 
-
-
-
 /* Dark Theme Body background-image color*/
 .darkMode {
   height: 100vh;
@@ -648,7 +643,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 0;
-  color: var(--divine_mercy_text_dark);
+  color: var(--darkModeText);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
