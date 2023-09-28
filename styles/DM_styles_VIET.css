@@ -414,7 +414,7 @@ body{
           grid-row: 3/4;
           padding-bottom: 9px;
           justify-self: center;
-          color: var(--divine_mercy_text_dark);
+          color: var(--darkModeText);
           text-align: center;
           white-space: nowrap;
           font-size: clamp(0.8rem, 1.5rem,3rem);
