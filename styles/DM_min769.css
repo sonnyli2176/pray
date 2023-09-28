@@ -217,7 +217,7 @@
   .EternalFather_Active {
     display: none;
     position: absolute;
-    top: -700px;
+    top: -750px;
     left: 230px;
     border-radius: 5px;
     padding: 8px 10px;
@@ -232,7 +232,7 @@
   .EternalFather_Active.active {
     display: block;
     position: absolute;
-    top: -700px;
+    top: -750px;
     left: 200px;
     border-radius: 5px;
     padding: 8px 10px;
