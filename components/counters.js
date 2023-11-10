@@ -199,13 +199,13 @@ function closeContainer() {
 }
 
 //  PLAY MOUSE CLICK 
-const buttons = document.querySelectorAll('button');
-const audio = new Audio('./sound/click.mp3');
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    audio.play();
-  });
-});
+// const buttons = document.querySelectorAll('button');
+// const audio = new Audio('./sound/click.mp3');
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     audio.play();
+//   });
+// });
 
 function resetTimeout() {
   clearTimeout(TimeOutId);
