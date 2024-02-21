@@ -150,7 +150,6 @@
                       height: fit-content;
                       margin: 0px auto;
                       top: -30px;
-                      left: 7%;
                       position: relative;
                       flex-direction: row;
                       justify-content: space-between;
@@ -163,16 +162,17 @@
                       width: 100%;
                       height: fit-content;
                       list-style: none;
-                      justify-content: right;
-                      right: 37%;
+                      justify-content: center;
+                      right: 4%;
                     }
 
                    
                     .menu-ul li a {
-                      padding-left: 3rem;
+                      white-space: nowrap;
+                      text-align: center;
+                      padding-left: 1.5rem;
                       letter-spacing: 1px;
-                      right: 2rem;
-                      font-size: 17px;
+                      font-size: clamp(1rem, 1vw, 1.5rem);
                       }
 
               

@@ -148,7 +148,7 @@
                       height: fit-content;
                       margin: 0px auto;
                       top: -30px;
-                      left: 7%;
+                      left: 8%;
                       position: relative;
                       flex-direction: row;
                       justify-content: space-between;
@@ -169,7 +169,7 @@
                       padding-left: 3rem;
                       letter-spacing: 1px;
                       right: 2rem;
-                      font-size: 17px;
+                      font-size: clamp(1rem, 1vw, 1.5rem);
                       }
 
                
@@ -405,6 +405,7 @@ a,
             }
 
                .heart{
+                display: none;
               position: relative;
               top: 50px;
             }
