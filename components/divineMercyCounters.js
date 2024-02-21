@@ -115,13 +115,13 @@ function updateDisplay() {
 }
 
 // const links = document.getElementsByTagName("a");
-const buttons = document.querySelectorAll("button");
-const audio = new Audio("./sound/click.mp3");
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    audio.play();
-  });
-});
+// const buttons = document.querySelectorAll("button");
+// const audio = new Audio("./sound/click.mp3");
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     audio.play();
+//   });
+// });
 
 divineMercyBtn.addEventListener('click', () => {
   counterContainer.classList.toggle("active");
