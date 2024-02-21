@@ -3,74 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-/* =============================   The Hamburger Menu Section   ==============================*/
-
-.hamburger {
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  padding: 1rem;
-  z-index: 9;
-}
-
-.hamburger.active {
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  padding: 1rem;
-  z-index: 9;
-}
-
-.bar {
-  width: 70%;
-  height: 4px;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--lightblue);
-  padding: 1px;
-  transition: transform 0.6s, opacity 0.8s, top 0.6s;
-  z-index: 9;
-}
-
-/* ==================    Hamburger Settings   ===================== */
-.bar-top {
-  top: 25%;
-}
-
-.bar-bot {
-  top: 75%;
-}
-
-
-
-/* ==================    Hamburger Active Effects   ===================== */
-.hamburger.active .bar-top {
-  transform: translate(-50%, -50%) rotate(-315deg);
-  top: 50%;
-}
-
-.hamburger.active .bar-mid {
-  opacity: 0;
-}
-
-.hamburger.active .bar-bot {
-  transform: translate(-50%, -50%) rotate(-225deg);
-  top: 50%;
-}
-
-
-
 #wrapper {
   max-width: 100%;
   margin-top: 1rem;
@@ -85,7 +17,8 @@ body {
 .top_banner{
   padding: 0px 8%;
   display: flex;
-  background-color: rgb(69, 78, 75);
+  background-color: rgba(69, 78, 75, 0.5);
+  border-radius: 5px;
   justify-content: end;
   align-items: center;
   z-index: 0;
@@ -112,53 +45,136 @@ body {
   resize: both;
 }
 
-/* Beginning of Hamburger Nav */
-nav {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 360px;
-  transition: all 0.5s ease-in-out;
-}
 
-.nav {
-  display: none;
-}
+            /* Beginning of Hamburger Nav */
+            nav {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              width: 360px;
+              transition: all 0.5s ease-in-out;
+            }
 
-.nav.active {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  place-items: center;
-  z-index: 5;
-}
+            .nav {
+              display: none;
+            }
 
-.menu-ul {
-  position: relative;
-  top: 160px;
-  min-width: 100%;
-  margin: 60px auto;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  transition: all 0.1s ease-in-out;
-  z-index: 5;
-}
-.menu-ul li {
-  color: rgb(26, 176, 226);
-}
+            .nav.active {
+              display: block;
+              margin: 0 auto;
+              position: relative;
+              place-items: center;
+              z-index: 5;
+            }
 
-/* *********   This is where how text affected centering    **********/
-.menu-ul li a {
-  color: rgb(26, 176, 226);
-  display: block;
-  background-color: rgb(54, 71, 121);
-  padding: 0.5em 0 35px;
-  white-space: nowrap;
-}
+            .menu-ul {
+              position: absolute;
+              top: 0px;
+              left: -50px;
+              min-width: 100%;
+              display: flex;
+              flex-direction: column;
+              list-style: none;
+              text-justify: center;
+              transition: all 0.3s ease-in-out;
+              z-index: 5;
+            }
+            .menu-ul li {
+              color: rgb(26, 176, 226);
+            }
 
-.menu-ul li a:hover {
-  background-color: rgb(54, 71, 121);
-  color: rgb(162, 199, 211);
-}
+       
+
+            /* *********   This is where how text affected centering    **********/
+             .menu-ul li a {
+              color: rgb(26, 176, 226);
+              text-decoration: none;              
+              display: block;
+              background-color: rgb(54, 71, 121);
+              padding: 0.5em; 
+              white-space: nowrap;
+            }
+
+            .menu-ul li a:hover {
+              background-color: rgb(54, 71, 121);
+              color: rgb(162, 199, 211);
+            }
+
+           .index,.man_coi, .home, .links{
+              left: 0;
+              width: 100%;
+              text-align: center;
+              padding: 1px;
+              margin: 0;
+            }
+            a{
+              height: 30px;
+              text-align: bottom;
+            }
+
+
+             .hamburger {
+              position: absolute;
+              margin: 0;
+              right: 15px;
+              top: 22px;
+              height: 30px;
+              width: 35px;
+              cursor: pointer;
+              z-index: 4;
+            }
+
+            .hamburger.active {
+              position: absolute;
+              margin: 0;
+              right: 10px;
+              top: 3px;
+              height: 30px;
+              width: 30px;
+              cursor: pointer;
+              padding: 1rem;
+              z-index: 4;
+            }
+
+
+           .bar {
+              width: 70%;
+              height: 4px;
+              border-radius: 25px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: white;
+              transition: transform 0.6s, opacity 0.8s, top 0.6s;
+              z-index: 4;
+            }
+         
+            /* ==================    Hamburger Settings   ===================== */
+            .bar-top {
+              top: 25%;
+            }
+
+            .bar-bot {
+              top: 75%;
+            }
+
+            /* ==================    Hamburger Active Effects   ===================== */
+            .hamburger.active .bar-top {
+              transform: translate(-50%, -50%) rotate(-315deg);
+              top: 50%;
+            }
+
+            .hamburger.active .bar-mid {
+              opacity: 0;
+            }
+
+            .hamburger.active .bar-bot {
+              transform: translate(-50%, -50%) rotate(-225deg);
+              top: 50%;
+            }
+            /* End of Hamburger Nav */
+
+
+
 

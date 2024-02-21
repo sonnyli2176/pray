@@ -559,7 +559,7 @@
   /* DIGIT */
   #chaplets {
     position: absolute;
-    top: 230px;
+    top: 250px;
     left: 40px;
     padding: 0 3px;
     transform: translate(-50%, -50%);
@@ -579,7 +579,7 @@
   #chaplets__bottom {
     position: absolute;
     left: 15px;
-    top: 250px;
+    top: 264px;
     font-size: 0.8rem;
     color: var(--rose);
   }
@@ -600,7 +600,7 @@
     order: 3;
     position: relative;
     left: 15px;
-    top: 240px;
+    top: 260px;
     background-color: var(--divine_mercy_dark_Red);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     cursor: pointer;

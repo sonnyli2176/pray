@@ -497,7 +497,7 @@
               margin-top: 0;
               padding: 0;
               top: -95%;
-              left: 250px;
+              left: 270px;
               z-index: 9;  
               transition: all 2s ease;
             }
@@ -507,7 +507,7 @@
               position: relative;
               padding: 0;              
               top: -105%;
-              left: 250px;
+              left: 270px;
               z-index: 9;     
               transition: all 2s ease;
             }
